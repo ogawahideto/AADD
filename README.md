@@ -8,7 +8,7 @@ Every day at 9:00 AM, AADD automatically:
 3. Generates a creative, interactive web app using Claude AI
 4. Publishes it to GitHub Pages
 
-[View Live Site](https://ogawahideto.github.io/AADD/) (after setup)
+[View Live Site](https://YOUR-USERNAME.github.io/AADD/) (replace YOUR-USERNAME with your GitHub username after setup)
 
 ## Features
 
@@ -26,24 +26,34 @@ Every day at 9:00 AM, AADD automatically:
 - Windows 10/11
 - Python 3.11 or higher
 - Git
+- GitHub account
 - Claude API key ([get one here](https://console.anthropic.com/))
 
 ### Installation
 
-1. **Clone the repository**
+⚠️ **IMPORTANT: Fork this repository first!**
+
+If you clone this repository directly, your generated content will try to push to the original repository (which will fail due to permissions). To use this system:
+
+1. **Fork this repository**
+   - Click the "Fork" button at the top of this GitHub page
+   - This creates your own copy of the repository
+
+2. **Clone YOUR forked repository**
    ```bash
-   git clone https://github.com/ogawahideto/AADD.git
+   git clone https://github.com/YOUR-USERNAME/AADD.git
    cd AADD
    ```
+   Replace `YOUR-USERNAME` with your GitHub username
 
-2. **Set up Python virtual environment**
+3. **Set up Python virtual environment**
    ```bash
    python -m venv venv
    venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-3. **Configure environment variables**
+4. **Configure environment variables**
    ```bash
    # Copy the example file
    copy .env.example .env
@@ -52,18 +62,25 @@ Every day at 9:00 AM, AADD automatically:
    notepad .env
    ```
 
-   Add your Claude API key to the `.env` file:
+   Add your Claude API key and **enable git push** in the `.env` file:
    ```env
    CLAUDE_API_KEY=sk-ant-api03-your-api-key-here
+   
+   # IMPORTANT: Enable git push to publish to YOUR repository
+   ENABLE_GIT_PUSH=true
+   
+   # Configure your git credentials
+   GIT_USER_NAME=YOUR-GITHUB-USERNAME
+   GIT_USER_EMAIL=your-email@example.com
    ```
 
-4. **Test the system**
+5. **Test the system**
    ```bash
    # Run a manual test
    scripts\test_run.bat
    ```
 
-5. **Set up automatic daily execution**
+6. **Set up automatic daily execution**
    ```powershell
    # Run PowerShell as Administrator
    # Right-click PowerShell → "Run as Administrator"
@@ -75,14 +92,14 @@ Every day at 9:00 AM, AADD automatically:
    .\scripts\setup_task_scheduler.ps1
    ```
 
-6. **Configure GitHub Pages**
-   - Go to your repository on GitHub
+7. **Configure GitHub Pages**
+   - Go to **your forked repository** on GitHub
    - Settings → Pages
    - Source: "Deploy from a branch"
    - Branch: `main`, Folder: `/docs`
    - Click "Save"
 
-   Your site will be live at: `https://ogawahideto.github.io/AADD/`
+   Your site will be live at: `https://YOUR-USERNAME.github.io/AADD/` (replace with your GitHub username)
 
 ## How It Works
 
