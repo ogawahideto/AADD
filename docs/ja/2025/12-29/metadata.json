@@ -1,0 +1,24 @@
+{
+  "date": "2025-12-29",
+  "anniversary": {
+    "title": "阪堺鉄道・難波 - 大和川（現在の南海本線）が開業。日本で2つ目の私設鉄道。",
+    "description": "阪堺鉄道・難波 - 大和川（現在の南海本線）が開業。日本で2つ目の私設鉄道。",
+    "year": 1885,
+    "category": "historical",
+    "source": "Wikipedia (ja)"
+  },
+  "app": {
+    "app_title": "阪堺鉄道開業140周年 - 近代日本を走り出した列車の物語",
+    "description": "日本初の民間鉄道・阪堺鉄道の開業とその遺産を紐解く没入型歴史体験",
+    "tags": [
+      "歴史",
+      "鉄道",
+      "明治時代",
+      "近代化",
+      "大阪"
+    ],
+    "estimated_engagement": "3-5分"
+  },
+  "generated_at": "2025-12-29T18:51:00.393327",
+  "generator_version": "1.0.0"
+}

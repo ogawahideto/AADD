@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AADD - Automated Anniversary-Driven Development</title>
+    <meta name="description" content="Daily web apps celebrating historical anniversaries in Japanese and English">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+        }
+        .language-selector {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .language-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            min-width: 250px;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .language-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        .language-flag {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .language-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .language-count {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .footer {
+            margin-top: 4rem;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 AADD</h1>
+        <p class="subtitle">Automated Anniversary-Driven Development</p>
+        <p class="subtitle">毎日、歴史的記念日を祝う自動生成Webアプリ</p>
+
+        <div class="language-selector">
+            <a href="ja/index.html" class="language-card">
+                <div class="language-flag">🇯🇵</div>
+                <div class="language-name">日本語</div>
+                <div class="language-count">3 アプリ</div>
+            </a>
+
+            <a href="en/index.html" class="language-card">
+                <div class="language-flag">🇬🇧</div>
+                <div class="language-name">English</div>
+                <div class="language-count">3 apps</div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>AI-powered daily web apps celebrating historical anniversaries</p>
+            <p>Built with Claude API | <a href="https://github.com/ogawahideto/AADD" style="color: white;">GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>

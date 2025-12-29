@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebrate the 149th anniversary of Pablo Casals' birth with an interactive journey through the life and legacy of the revolutionary cellist, conductor and humanitarian.">
+    <meta property="og:title" content="The Resonant Legacy: Pablo Casals at 149">
+    <meta property="og:description" content="Explore the extraordinary life of Pablo Casals through an interactive musical journey.">
+    <meta property="og:type" content="website">
+    <title>The Resonant Legacy: Pablo Casals at 149</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        </nav>
+        <div class="header-content">
+            <h1>The Resonant Legacy</h1>
+            <h2>Pablo Casals at 149</h2>
+            <p class="date">December 29, 1876 - October 22, 1973</p>
+            <div class="divider"></div>
+            <p class="tagline">"Music, this marvelous universal language, would be a stronger bond among the nations than all the international treaties."</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="column-wrapper">
+                <div class="text-column">
+                    <h3>The Maestro of the Cello</h3>
+                    <p>Born December 29, 1876, in El Vendrell, Catalonia, Spain, Pau Casals (known internationally as Pablo Casals) would revolutionize cello playing and become one of history's most influential musicians and humanitarians.</p>
+                    <p>Before Casals, the cello was considered primarily an accompaniment instrument. Through his extraordinary technique, expressiveness, and innovations in fingering and bowing, Casals elevated the cello to a solo instrument of the highest order.</p>
+                </div>
+                <div class="visual-column">
+                    <div class="cello-illustration">
+                        <div class="cello-body"></div>
+                        <div class="cello-neck"></div>
+                        <div class="cello-strings">
+                            <div class="string"></div>
+                            <div class="string"></div>
+                            <div class="string"></div>
+                            <div class="string"></div>
+                        </div>
+                        <div class="cello-pegs"></div>
+                        <div class="cello-endpin"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-timeline">
+            <h3>A Life in Music and Principle</h3>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-events" id="timeline-events">
+                    <!-- Timeline events will be inserted here by JavaScript -->
+                </div>
+                <div class="timeline-navigation">
+                    <button id="prev-event" aria-label="Previous event">←</button>
+                    <div id="event-indicator"></div>
+                    <button id="next-event" aria-label="Next event">→</button>
+                </div>
+            </div>
+            <div class="event-details" id="event-details">
+                <!-- Event details will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="daily-practice">
+            <h3>The Bach Ritual</h3>
+            <p>For more than 80 years, Casals began every day the same way: by playing Bach's six cello suites. He described this ritual as "rediscovering the world each day."</p>
+            <div class="bach-player">
+                <h4>Experience Bach Through Casals' Legacy</h4>
+                <p>Select a movement to hear how Casals' interpretations transformed our understanding of Bach's cello suites.</p>
+                <div class="suite-selector">
+                    <div class="suite active" data-suite="1">Suite No. 1</div>
+                    <div class="suite" data-suite="2">Suite No. 2</div>
+                    <div class="suite" data-suite="3">Suite No. 3</div>
+                </div>
+                <div class="movement-info" id="movement-info">
+                    <p>Suite No. 1 in G Major, BWV 1007</p>
+                    <p>Prélude: The most famous of all Bach's cello pieces, this flowing movement revolutionized cello playing. When Casals discovered these forgotten suites at age 13, they were considered merely technical exercises.</p>
+                </div>
+                <div class="audio-visualizer">
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="humanitarian">
+            <h3>More Than Music: The Humanitarian</h3>
+            <div class="quote-block">
+                "I am a human being first, a musician second."
+            </div>
+            <p>Casals' principles were as powerful as his music. In 1939, he began a self-imposed exile from Spain to protest Franco's fascist regime. He refused to perform in any country that recognized Franco's government, giving up countless opportunities at the height of his fame.</p>
+            <p>In 1971, at age 95, he performed at the United Nations where he gave his famous "El Cant dels Ocells" (Song of the Birds) performance and delivered an impassioned speech for peace that moved the world: "This is the greatest honor of my life. Peace has always been my greatest concern."</p>
+            
+            <div class="legacy-box">
+                <h4>The Casals Legacy</h4>
+                <ul>
+                    <li>Revolutionized cello technique and expressivity</li>
+                    <li>Rediscovered and popularized Bach's cello suites</li>
+                    <li>Founded the Prades Festival (1950) and Puerto Rico Festival (1957)</li>
+                    <li>Awarded the U.N. Peace Medal at age 95</li>
+                    <li>Composed "El Pessebre" (The Manger), an oratorio for peace</li>
+                    <li>Trained generations of cellists who continued his traditions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="casals-quiz">
+            <h3>Discover More About the Maestro</h3>
+            <div id="quiz-container">
+                <div id="question-container">
+                    <p id="question"></p>
+                    <div id="options-container"></div>
+                </div>
+                <div id="result-container" class="hidden">
+                    <p id="result-message"></p>
+                    <p id="explanation"></p>
+                    <button id="next-question">Next Question</button>
+                </div>
+                <div id="final-results" class="hidden">
+                    <h4>Quiz Complete!</h4>
+                    <p id="score-display"></p>
+                    <p>Pablo Casals' extraordinary life spanned nearly a century, during which he transformed music and stood firmly for human dignity and peace.</p>
+                    <button id="restart-quiz">Restart Quiz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+        <p>Commemorating Pablo Casals' 149th birth anniversary: December 29, 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

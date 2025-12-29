@@ -1,0 +1,23 @@
+{
+  "date": "2025-12-28",
+  "anniversary": {
+    "title": "First commercial movie screening - Lumière Brothers",
+    "description": "Auguste and Louis Lumière held the first commercial public screening of projected motion pictures at the Grand Café in Paris. This event marked the birth of cinema as we know it today, revolutionizing entertainment and visual storytelling for generations to come.",
+    "year": 1895,
+    "category": "cultural",
+    "source": "Fallback"
+  },
+  "app": {
+    "app_title": "Lumière 130: Birth of Cinema",
+    "description": "Interactive timeline celebrating the 130th anniversary of the first commercial film screening by the Lumière Brothers",
+    "tags": [
+      "cinema history",
+      "Lumière Brothers",
+      "interactive timeline",
+      "cultural anniversary"
+    ],
+    "estimated_engagement": "3-4 minutes"
+  },
+  "generated_at": "2025-12-28T18:06:24.176693",
+  "generator_version": "1.0.0"
+}

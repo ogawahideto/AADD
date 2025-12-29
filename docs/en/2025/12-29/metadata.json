@@ -1,0 +1,24 @@
+{
+  "date": "2025-12-29",
+  "anniversary": {
+    "title": "Pablo Casals Born",
+    "description": "Pablo Casals, one of the greatest cellists of all time, was born in Catalonia, Spain. His innovative techniques and passionate performances revolutionized cello playing and inspired generations of musicians. He was also a renowned conductor and humanitarian.",
+    "year": 1876,
+    "category": "cultural",
+    "source": "Fallback"
+  },
+  "app": {
+    "app_title": "The Resonant Legacy: Pablo Casals at 149",
+    "description": "An interactive journey through the revolutionary musical and humanitarian legacy of Pablo Casals",
+    "tags": [
+      "music",
+      "history",
+      "humanitarian",
+      "cello",
+      "Bach"
+    ],
+    "estimated_engagement": "3-6 minutes"
+  },
+  "generated_at": "2025-12-29T18:53:55.045069",
+  "generator_version": "1.0.0"
+}

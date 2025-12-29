@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AADD - Automated Anniversary-Driven Development</title>
+    <meta name="description" content="Daily web apps celebrating historical anniversaries, generated automatically with AI">
+    <link rel="stylesheet" href="assets/css/index-style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <h1>🎉 AADD</h1>
+                {{LANG_SWITCHER}}
+            </div>
+            <p class="subtitle">Automated Anniversary-Driven Development</p>
+            <p class="description">
+                Every day, a new web app is automatically generated to celebrate a historical anniversary.
+                Powered by Claude AI and creative automation.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="stats">
+            <div class="stat">
+                <span class="stat-number">{{TOTAL_APPS}}</span>
+                <span class="stat-label">Apps Created</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">{{YEARS_COVERED}}</span>
+                <span class="stat-label">Years Covered</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">{{LAST_UPDATED}}</span>
+                <span class="stat-label">Last Updated</span>
+            </div>
+        </section>
+
+        <section class="apps-section">
+            <h2>Recent Apps</h2>
+            <div class="apps-grid">
+                {{APP_CARDS}}
+            </div>
+        </section>
+
+        <section class="browse-section">
+            <h2>Browse All Apps</h2>
+            <div class="year-links">
+                {{YEAR_LINKS}}
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Generated daily at 9:00 AM JST using
+                <a href="https://www.anthropic.com/claude" target="_blank">Claude AI</a>.
+                View source on <a href="https://github.com/ogawahideto/AADD" target="_blank">GitHub</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/index-app.js"></script>
+</body>
+</html>

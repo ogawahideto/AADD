@@ -1,0 +1,388 @@
+/* 基本スタイル */
+:root {
+  --primary: #1a5276;
+  --primary-light: #2980b9;
+  --secondary: #d4ac0d;
+  --text: #333;
+  --text-light: #666;
+  --background: #f9f9f9;
+  --card-bg: #fff;
+  --accent: #e67e22;
+  --border: #ddd;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --timeline-track: #e0e0e0;
+  --timeline-progress: #3498db;
+}
+
+/* ダークモード */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #2980b9;
+    --primary-light: #3498db;
+    --secondary: #f1c40f;
+    --text: #f0f0f0;
+    --text-light: #aaa;
+    --background: #121212;
+    --card-bg: #1e1e1e;
+    --accent: #e67e22;
+    --border: #333;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --timeline-track: #333;
+    --timeline-progress: #2980b9;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.accent {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.date {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* メインコンテンツ */
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+/* イントロセクション */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-graphic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.cta-container {
+  margin-top: 2rem;
+}
+
+.cta-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.cta-button:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* グローブアニメーション */
+.globe {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 70% 30%, var(--primary-light), var(--primary));
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: rotate 30s infinite linear;
+  margin: 0 auto;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.meridian, .parallel {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.meridian {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.meridian:nth-child(1) { transform: rotate(30deg); }
+.meridian:nth-child(2) { transform: rotate(60deg); }
+.meridian:nth-child(3) { transform: rotate(90deg); }
+
+.parallel {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+
+.parallel:nth-child(4) { transform: rotate(0deg); }
+.parallel:nth-child(5) {
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: 30%;
+}
+
+/* タイムラインセクション */
+#timeline-section {
+  opacity: 1;
+  max-height: 1000px;
+  transition: opacity 0.5s, max-height 0.5s;
+  overflow: hidden;
+}
+
+#timeline-section.hidden {
+  opacity: 0;
+  max-height: 0;
+}
+
+.timeline-container {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow);
+  overflow: hidden;
+}
+
+.timeline-controls {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary);
+}
+
+.timeline-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+.timeline-controls button:hover {
+  opacity: 0.8;
+}
+
+.timeline-progress {
+  flex: 1;
+  height: 6px;
+  background-color: var(--timeline-track);
+  border-radius: 3px;
+  margin: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress-bar {
+  position: absolute;
+  height: 100%;
+  background-color: var(--secondary);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+.timeline-display {
+  padding: 2rem;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.timeline-year {
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.timeline-description {
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+/* 影響セクション */
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.impact-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow);
+  transition: transform 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.impact-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* 振り返りセクション */
+.reflections {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+/* フッター */
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* レスポンシブデザイン */
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .intro {
+    flex-direction: row;
+  }
+  
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .impact-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .globe {
+    width: 250px;
+    height: 250px;
+  }
+}

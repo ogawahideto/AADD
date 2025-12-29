@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="リュミエール兄弟による世界初の商業映画上映130周年を祝う、映画史の重要な瞬間を紹介するインタラクティブなタイムライン">
+    <meta property="og:title" content="映画誕生130年 - リュミエール兄弟の遺産">
+    <meta property="og:description" content="1895年、パリのグラン・カフェで行われた世界初の商業映画上映から130年を振り返るインタラクティブなタイムライン">
+    <meta property="og:type" content="website">
+    <title>映画誕生130年 - リュミエール兄弟の遺産</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="theme-toggle" id="themeToggle" role="button" tabindex="0" aria-label="テーマ切り替え">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+        <h1>映画誕生130周年</h1>
+        <h2>リュミエール兄弟 - 世界初の商業映画上映</h2>
+        <p class="date">1895年12月28日 - 2025年</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <p>1895年12月28日、オーギュストとルイ・リュミエール兄弟はパリのグラン・カフェで世界初となる商業映画の公開上映会を開催しました。たった33秒の短編映像群が、後の映画産業の誕生を告げる瞬間となったのです。</p>
+                <p>この歴史的な出来事から130年を経た今、私たちは映画というメディアがどのように進化し、私たちの文化や芸術に深遠な影響を与えてきたかを振り返ります。</p>
+            </div>
+            <div class="film-strip">
+                <div class="film-hole"></div>
+                <div class="film-hole"></div>
+                <div class="film-hole"></div>
+                <div class="film-hole"></div>
+            </div>
+        </section>
+        
+        <section class="timeline-section">
+            <h2>映画の進化 - 130年のタイムライン</h2>
+            <p class="timeline-instructions">下のタイムラインで映画の重要な瞬間をご覧ください</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-controls">
+                    <button id="prevBtn" aria-label="前の出来事">←</button>
+                    <div class="timeline-progress-container">
+                        <div id="timelineProgress" class="timeline-progress"></div>
+                    </div>
+                    <button id="nextBtn" aria-label="次の出来事">→</button>
+                </div>
+                
+                <div class="timeline-content" id="timelineContent">
+                    <!-- JavaScriptで内容が生成されます -->
+                </div>
+            </div>
+        </section>
+
+        <section class="fun-facts">
+            <h2>リュミエール兄弟 豆知識</h2>
+            <div class="facts-container">
+                <div class="fact">
+                    <h3>シネマトグラフ</h3>
+                    <p>リュミエール兄弟が発明した「シネマトグラフ」は、カメラ、映写機、現像機の3役を兼ねる画期的な装置でした。</p>
+                </div>
+                <div class="fact">
+                    <h3>入場料</h3>
+                    <p>初上映会の入場料は1フラン。当時としては決して安くない金額でしたが、多くの観客が訪れました。</p>
+                </div>
+                <div class="fact">
+                    <h3>観客の反応</h3>
+                    <p>「列車の到着」の上映時、実物大の列車が画面に向かってくる映像に観客は恐怖で逃げ出したという伝説があります。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="legacy">
+            <h2>映画が変えた世界</h2>
+            <p>リュミエール兄弟の先見性は、単なる技術革新を超え、新たな芸術形式と産業の創出につながりました。彼らの遺産は今日の映画、テレビ、そしてデジタルメディアにまで影響を与え続けています。</p>
+            <p>初めての映画上映から130年経った今も、私たちは依然として映像の魔法に魅了され続けています。テクノロジーは変わっても、ストーリーを伝え、感情を呼び起こし、世界を理解するための強力な手段として映画の本質は変わりません。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+        <p>映画の歴史についてさらに学ぶには、お近くの映画史専門の図書館や博物館をご利用ください。</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+{
+  "01-01": [
+    {
+      "year": 1863,
+      "title": "Emancipation Proclamation",
+      "description": "President Abraham Lincoln issued the Emancipation Proclamation, declaring all slaves in Confederate territory to be free. This pivotal moment in American history transformed the Civil War into a fight for freedom and changed the course of the nation.",
+      "category": "historical"
+    },
+    {
+      "year": 1959,
+      "title": "Cuban Revolution",
+      "description": "Fidel Castro's revolutionary forces successfully overthrew Cuban President Fulgencio Batista, marking the beginning of communist rule in Cuba. This event reshaped Caribbean politics and U.S.-Latin American relations for decades to come.",
+      "category": "political"
+    }
+  ],
+  "07-20": [
+    {
+      "year": 1969,
+      "title": "Apollo 11 Moon Landing",
+      "description": "NASA's Apollo 11 mission successfully landed the first humans on the Moon. Neil Armstrong and Buzz Aldrin became the first people to walk on the lunar surface, with Armstrong's famous words 'That's one small step for man, one giant leap for mankind' marking one of humanity's greatest achievements.",
+      "category": "scientific"
+    }
+  ],
+  "12-17": [
+    {
+      "year": 1903,
+      "title": "First Powered Flight",
+      "description": "Orville and Wilbur Wright achieved the first successful powered, controlled airplane flight in Kitty Hawk, North Carolina. This 12-second flight covered 120 feet and revolutionized transportation, marking the birth of modern aviation.",
+      "category": "scientific"
+    }
+  ],
+  "12-27": [
+    {
+      "year": 1831,
+      "title": "HMS Beagle begins voyage",
+      "description": "The HMS Beagle departed on its second survey voyage with Charles Darwin aboard as the ship's naturalist. This five-year journey would provide Darwin with the observations and specimens that would later form the basis of his revolutionary theory of evolution by natural selection.",
+      "category": "scientific"
+    },
+    {
+      "year": 1945,
+      "title": "IMF and World Bank established",
+      "description": "The International Monetary Fund and the World Bank were officially created following the Bretton Woods Conference. These institutions were designed to rebuild the international economic system and prevent another Great Depression, fundamentally shaping global economic governance for decades to come.",
+      "category": "political"
+    },
+    {
+      "year": 1968,
+      "title": "Apollo 8 returns to Earth",
+      "description": "Apollo 8, the first manned spacecraft to orbit the Moon, successfully returned to Earth. The crew became the first humans to see the far side of the Moon and witness an Earthrise, capturing the iconic photograph that would inspire the environmental movement.",
+      "category": "scientific"
+    }
+  ],
+  "12-28": [
+    {
+      "year": 1895,
+      "title": "First commercial movie screening - Lumière Brothers",
+      "description": "Auguste and Louis Lumière held the first commercial public screening of projected motion pictures at the Grand Café in Paris. This event marked the birth of cinema as we know it today, revolutionizing entertainment and visual storytelling for generations to come.",
+      "category": "cultural"
+    },
+    {
+      "year": 1612,
+      "title": "Galileo observes Neptune",
+      "description": "Italian astronomer Galileo Galilei made the first recorded observation of the planet Neptune, though he mistook it for a fixed star. It would be more than two centuries before Neptune was officially recognized as a planet by Johann Galle in 1846.",
+      "category": "scientific"
+    },
+    {
+      "year": 1973,
+      "title": "Endangered Species Act signed",
+      "description": "President Richard Nixon signed the Endangered Species Act into law in the United States, providing for the conservation of species threatened with extinction. This landmark legislation has helped protect countless species and their habitats, fundamentally changing environmental policy.",
+      "category": "political"
+    }
+  ],
+  "12-29": [
+    {
+      "year": 1885,
+      "title": "阪堺鉄道 難波駅開業 - 日本で2番目の私設鉄道",
+      "description": "阪堺鉄道が難波駅（現在の今宮駅）を開業し、日本で2番目の私設鉄道となった。この鉄道は大阪の近代化と都市交通の発展に大きく貢献し、現在の南海電気鉄道の前身となった。日本の鉄道史における重要な一歩となった。",
+      "category": "historical"
+    },
+    {
+      "year": 1934,
+      "title": "日本がワシントン海軍軍縮条約の破棄を通告",
+      "description": "日本政府がワシントン海軍軍縮条約の破棄を米英両国に通告した。この条約は第一次世界大戦後の海軍軍備制限を定めたものだったが、日本は主力艦の保有比率に不満を持っており、破棄により軍備拡張への道を開いた。この決定は太平洋戦争への道を準備する重要な転換点となった。",
+      "category": "political"
+    },
+    {
+      "year": 1890,
+      "title": "Wounded Knee Massacre",
+      "description": "U.S. Army soldiers killed approximately 300 Lakota people at Wounded Knee Creek on the Pine Ridge Indian Reservation in South Dakota. This tragic event marked the end of the Indian Wars and became a symbol of the injustices suffered by Native Americans.",
+      "category": "historical"
+    },
+    {
+      "year": 1940,
+      "title": "London Blitz devastates the City",
+      "description": "During World War II, the Luftwaffe conducted one of the most destructive air raids on London, causing massive fires that destroyed much of the historic City of London. Despite the devastation, Londoners' resilience during the Blitz became legendary.",
+      "category": "historical"
+    },
+    {
+      "year": 1996,
+      "title": "Guatemala Peace Accords signed",
+      "description": "The Guatemalan government and the Guatemalan National Revolutionary Unity signed peace accords, ending a 36-year civil war that had killed over 200,000 people. This marked a new era of democracy and reconciliation for Guatemala.",
+      "category": "political"
+    }
+  ],
+  "04-15": [
+    {
+      "year": 1912,
+      "title": "RMS Titanic sinks",
+      "description": "The RMS Titanic sank in the North Atlantic Ocean after striking an iceberg during her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making it one of the deadliest peacetime maritime disasters in history.",
+      "category": "historical"
+    }
+  ],
+  "11-09": [
+    {
+      "year": 1989,
+      "title": "Fall of the Berlin Wall",
+      "description": "The Berlin Wall, which had divided East and West Berlin for 28 years, was opened. This momentous event symbolized the end of the Cold War and led to the reunification of Germany, fundamentally changing the political landscape of Europe.",
+      "category": "political"
+    }
+  ],
+  "08-06": [
+    {
+      "year": 1945,
+      "title": "Atomic bombing of Hiroshima",
+      "description": "The United States dropped the first atomic bomb used in warfare on the Japanese city of Hiroshima. The bombing killed an estimated 80,000 people immediately and tens of thousands more from radiation effects, marking the beginning of the nuclear age.",
+      "category": "historical"
+    }
+  ],
+  "08-15": [
+    {
+      "year": 1945,
+      "title": "End of World War II - Japan surrenders",
+      "description": "Emperor Hirohito announced Japan's unconditional surrender in World War II via radio broadcast, marking the end of the war. This day is commemorated in Japan as the 'day of the end of the war' (終戦記念日) and represents a turning point in Japanese history.",
+      "category": "historical"
+    }
+  ],
+  "03-11": [
+    {
+      "year": 2011,
+      "title": "Great East Japan Earthquake and Tsunami",
+      "description": "A magnitude 9.0 earthquake struck off the coast of Tohoku, Japan, triggering a devastating tsunami that killed over 15,000 people. The disaster also caused the Fukushima Daiichi nuclear accident, making it one of the most significant natural disasters in modern Japanese history.",
+      "category": "historical"
+    }
+  ],
+  "10-23": [
+    {
+      "year": 1868,
+      "title": "Meiji Era begins in Japan",
+      "description": "The Meiji Restoration marked the end of the Tokugawa shogunate and the restoration of imperial rule in Japan under Emperor Meiji. This period of rapid modernization and westernization transformed Japan into a major world power.",
+      "category": "political"
+    }
+  ],
+  "07-04": [
+    {
+      "year": 1776,
+      "title": "U.S. Declaration of Independence",
+      "description": "The Continental Congress adopted the Declaration of Independence, announcing the thirteen American colonies' separation from Great Britain. This founding document established the principles of individual liberty and self-governance that would shape American democracy.",
+      "category": "political"
+    }
+  ],
+  "10-29": [
+    {
+      "year": 1929,
+      "title": "Black Tuesday - Stock Market Crash",
+      "description": "The Wall Street stock market crashed on 'Black Tuesday,' marking the beginning of the Great Depression. Over 16 million shares were traded in panic selling, wiping out thousands of investors and triggering a worldwide economic crisis that lasted a decade.",
+      "category": "historical"
+    }
+  ],
+  "05-29": [
+    {
+      "year": 1953,
+      "title": "First ascent of Mount Everest",
+      "description": "Edmund Hillary of New Zealand and Tenzing Norgay, a Sherpa of Nepal, became the first climbers confirmed to reach the summit of Mount Everest. Their achievement marked a milestone in mountaineering history and human determination to conquer Earth's highest peak.",
+      "category": "historical"
+    }
+  ],
+  "06-06": [
+    {
+      "year": 1944,
+      "title": "D-Day - Normandy Landings",
+      "description": "Allied forces launched Operation Overlord, the largest amphibious invasion in history, on the beaches of Normandy, France. This pivotal World War II operation marked the beginning of the liberation of Western Europe from Nazi occupation.",
+      "category": "historical"
+    }
+  ],
+  "03-15": [
+    {
+      "year": -44,
+      "title": "Assassination of Julius Caesar",
+      "description": "Roman dictator Julius Caesar was assassinated by a group of senators led by Marcus Junius Brutus. This event marked a turning point in Roman history, ultimately leading to the end of the Roman Republic and the rise of the Roman Empire.",
+      "category": "historical"
+    }
+  ],
+  "09-11": [
+    {
+      "year": 2001,
+      "title": "September 11 attacks",
+      "description": "A series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States killed nearly 3,000 people. The attacks led to the War on Terror, fundamentally changing U.S. foreign policy and global security measures.",
+      "category": "historical"
+    }
+  ],
+  "02-14": [
+    {
+      "year": 1876,
+      "title": "Alexander Graham Bell patents the telephone",
+      "description": "Alexander Graham Bell received a patent for the telephone, one of the most transformative inventions in human history. This device revolutionized communication, shrinking distances and laying the groundwork for our modern interconnected world.",
+      "category": "scientific"
+    }
+  ],
+  "12-25": [
+    {
+      "year": 1991,
+      "title": "World Wide Web becomes publicly available",
+      "description": "Tim Berners-Lee and his team at CERN made the World Wide Web available to the public, releasing the first web browser and server software. This marked the beginning of the internet revolution that would transform communication, commerce, and access to information globally.",
+      "category": "scientific"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IMFと世界銀行設立80周年を記念する教育的なウェブアプリケーション。グローバル経済を形作った重要な機関の歴史と影響を探ります。">
+  <meta property="og:title" content="世界金融秩序の誕生：IMFと世界銀行の80年">
+  <meta property="og:description" content="1945年に設立されたIMFと世界銀行が世界経済をどのように形作ったかを探る対話型タイムライン">
+  <meta property="og:type" content="website">
+  <title>世界金融秩序の誕生：IMFと世界銀行の80年</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>世界金融秩序の誕生</h1>
+      <h2>IMFと世界銀行設立から<span class="accent">80周年</span></h2>
+      <p class="date">2025年12月27日</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <div class="intro-text">
+        <h2>グローバル経済の基盤を形作った瞬間</h2>
+        <p>1945年12月27日、ブレトンウッズ会議の合意に基づき、国際通貨基金（IMF）と世界銀行が正式に設立されました。第二次世界大戦の終結を前に、44カ国の代表がアメリカのニューハンプシャー州ブレトンウッズに集まり、新たな国際経済秩序の青写真を描きました。</p>
+        <p>これらの機関は、大恐慌の再来を防ぎ、戦後の国際経済システムを再建するために設計されました。以来80年間、IMFと世界銀行は世界経済ガバナンスの中心的存在として機能し続けています。</p>
+        <div class="cta-container">
+          <button id="timeline-btn" class="cta-button">歴史的タイムラインを見る</button>
+        </div>
+      </div>
+      <div class="intro-graphic">
+        <div class="globe">
+          <div class="meridian"></div>
+          <div class="meridian"></div>
+          <div class="meridian"></div>
+          <div class="parallel"></div>
+          <div class="parallel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline-section" class="hidden">
+      <h2>IMFと世界銀行：80年の軌跡</h2>
+      <div class="timeline-container">
+        <div class="timeline-controls">
+          <button id="prev-event" aria-label="前のイベント">&#9664;</button>
+          <div class="timeline-progress">
+            <div id="progress-bar"></div>
+          </div>
+          <button id="next-event" aria-label="次のイベント">&#9654;</button>
+        </div>
+        <div class="timeline-display">
+          <div id="timeline-content">
+            <!-- JavaScriptでコンテンツが挿入されます -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact">
+      <h2>グローバル経済への影響</h2>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="icon">&#127758;</div>
+          <h3>国際協力</h3>
+          <p>190以上の加盟国が共通の経済目標に向けて協力する枠組みを提供</p>
+        </div>
+        <div class="impact-card">
+          <div class="icon">&#128176;</div>
+          <h3>金融安定</h3>
+          <p>世界的な金融危機時に安定化資金を提供し、経済ショックを緩和</p>
+        </div>
+        <div class="impact-card">
+          <div class="icon">&#127973;</div>
+          <h3>開発支援</h3>
+          <p>発展途上国へのインフラ整備、教育、保健分野の支援を通じた貧困削減</p>
+        </div>
+        <div class="impact-card">
+          <div class="icon">&#128202;</div>
+          <h3>経済モニタリング</h3>
+          <p>世界経済の監視と早期警戒システムの提供による危機予防</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reflections">
+      <h2>80年を振り返って</h2>
+      <p>IMFと世界銀行は、批判と賞賛の両方を受けながらも、グローバル経済の重要な柱として存在し続けています。気候変動から経済格差まで、今日の課題に対応するため、これらの機関は絶えず進化しています。戦後の混乱から生まれたこれらの組織が、今後どのように変化し、適応していくのかは、世界経済の将来にとって重要な問いかけとなっています。</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+      <p>歴史的事実と現代の解釈については、公式資料で確認することをお勧めします。</p>
+    </div>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>

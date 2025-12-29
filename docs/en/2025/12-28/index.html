@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Celebrate 130 years of cinema since the Lumière Brothers' first commercial film screening in Paris on December 28, 1895.">
+  <meta property="og:title" content="Lumière 130: Birth of Cinema">
+  <meta property="og:description" content="Interactive timeline celebrating the 130th anniversary of the first commercial film screening.">
+  <meta property="og:type" content="website">
+  <title>Lumière 130: Birth of Cinema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Lumière 130</h1>
+      <p class="tagline">The Birth of Cinema</p>
+      <div class="countdown">
+        <div class="countdown-number" id="days">00</div>
+        <div class="countdown-label">Days</div>
+        <div class="countdown-number" id="hours">00</div>
+        <div class="countdown-label">Hours</div>
+        <div class="countdown-number" id="minutes">00</div>
+        <div class="countdown-label">Minutes</div>
+        <div class="countdown-number" id="seconds">00</div>
+        <div class="countdown-label">Seconds</div>
+      </div>
+      <p class="anniversary-date">December 28, 2025 - 130th Anniversary</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro container">
+      <h2>The Day Cinema Was Born</h2>
+      <p>On December 28, 1895, Auguste and Louis Lumière held the world's first commercial public screening of projected motion pictures at the Grand Café in Paris, France. For the first time in history, an audience paid to watch moving images on a screen.</p>
+      
+      <div class="projector-animation">
+        <div class="projector">
+          <div class="lens"></div>
+          <div class="body"></div>
+          <div class="light-beam"></div>
+        </div>
+        <div class="screen"></div>
+      </div>
+      
+      <p>This humble gathering of about 33 spectators marked the birth of cinema as we know it today, revolutionizing entertainment and visual storytelling for generations to come.</p>
+    </section>
+
+    <section class="timeline-section container">
+      <h2>The Evolution of Cinema</h2>
+      <p>Explore key moments in the development of cinema, from its earliest days to its transformation into a global cultural phenomenon.</p>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline-controls">
+          <button id="prev-event" aria-label="Previous event">&#9664;</button>
+          <button id="next-event" aria-label="Next event">&#9654;</button>
+        </div>
+        <div class="timeline-viewer" id="timeline-viewer">
+          <!-- Timeline content will be inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section class="fun-facts container">
+      <h2>Did You Know?</h2>
+      <div class="fact-card">
+        <h3>First Films</h3>
+        <p>The first Lumière program consisted of ten short films, each about 50 seconds long. One of them, "L'Arrivée d'un train en gare de La Ciotat" (Arrival of a Train at La Ciotat Station), reportedly caused audience members to scream and jump from their seats as they believed the train was about to crash into them!</p>
+      </div>
+
+      <div class="fact-card">
+        <h3>Ticket Price</h3>
+        <p>The entrance fee for the first screening was 1 franc. The event was so successful that within a few days, the basement theater was seeing up to 2,500 spectators per day.</p>
+      </div>
+
+      <div class="fact-card">
+        <h3>Cinématographe</h3>
+        <p>The Lumière brothers' invention, the Cinématographe, was revolutionary because it combined a camera, film processor, and projector in one portable device, weighing only 16 pounds compared to Thomas Edison's 500-pound Kinetograph.</p>
+      </div>
+    </section>
+
+    <section class="impact container">
+      <h2>Legacy and Impact</h2>
+      <p>The Lumière brothers' innovation transformed entertainment forever, laying the foundation for what would become the most influential art form of the 20th century. Today's multi-billion-dollar global film industry, streaming platforms, and immersive technologies all trace their lineage back to that December evening in Paris.</p>
+      <div class="impact-stats">
+        <div class="stat">
+          <div class="stat-number">42,000+</div>
+          <div class="stat-desc">Films produced globally per year</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">$100B+</div>
+          <div class="stat-desc">Annual global box office and streaming revenue</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">3 Billion+</div>
+          <div class="stat-desc">People watch films monthly worldwide</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+      <p>Celebrate the 130th anniversary of cinema on December 28, 2025.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "date": "2025-12-27",
+  "anniversary": {
+    "title": "IMF and World Bank established",
+    "description": "The International Monetary Fund and the World Bank were officially created following the Bretton Woods Conference. These institutions were designed to rebuild the international economic system and prevent another Great Depression, fundamentally shaping global economic governance for decades to come.",
+    "year": 1945,
+    "category": "political",
+    "source": "Fallback"
+  },
+  "app": {
+    "app_title": "Bretton Woods Legacy: 80 Years of the IMF & World Bank",
+    "description": "Interactive timeline exploring the founding and evolution of the IMF and World Bank over 80 years",
+    "tags": [
+      "economic history",
+      "IMF",
+      "World Bank",
+      "Bretton Woods",
+      "financial institutions"
+    ],
+    "estimated_engagement": "3-5 minutes"
+  },
+  "generated_at": "2025-12-27T20:20:10.318674",
+  "generator_version": "1.0.0"
+}
