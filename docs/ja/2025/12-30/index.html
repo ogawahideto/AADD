@@ -1,222 +1,205 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="日本初の地下鉄、東京地下鉄道・浅草駅 - 上野駅間の開業から98年。革新的な歴史と人々の物語を振り返る">
-    <meta property="og:title" content="地下に拓かれた道 - 日本初の地下鉄誕生98周年">
-    <meta property="og:description" content="1927年12月30日、浅草-上野間に日本初の地下鉄が開業。その歴史と人々の物語">
-    <meta property="og:type" content="website">
-    <title>地下に拓かれた道 - 日本初の地下鉄誕生98周年</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日本初の地下鉄、東京地下鉄道（銀座線）開業98周年を記念する没入型体験。歴史、開発秘話、そして近代化への道のりを探る">
+  <meta property="og:title" content="地下の革命：日本初の地下鉄98周年">
+  <meta property="og:description" content="1927年、東京の地下で起きた交通革命の物語。東京地下鉄道開業98周年特集">
+  <meta property="og:type" content="website">
+  <title>地下の革命：日本初の地下鉄98周年 | 東京地下鉄道物語</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
-        </nav>
-        <div class="title-container">
-            <h1>地下に拓かれた道</h1>
-            <h2>日本初の地下鉄誕生98周年</h2>
-            <p class="date">1927年12月30日 → 2025年（98周年）</p>
+  <header>
+    <div class="header-container">
+      <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
+      <div class="theme-toggle" id="themeToggle" aria-label="ダークモード切り替え">🌓</div>
+    </div>
+    <h1>地下の革命</h1>
+    <p class="subtitle">日本初の地下鉄開通98周年</p>
+    <div class="anniversary-badge">
+      <span class="year">98</span>
+      <span class="text">周年</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>1927年12月30日、東京の地下に革命が起きた</h2>
+      <p class="lead">浅草から上野まで、わずか2.2kmの道のりが日本の交通史を永遠に変えた日</p>
+      
+      <div class="metro-animation">
+        <div class="train" id="animatedTrain">
+          <div class="train-front"></div>
+          <div class="train-body"></div>
         </div>
-        <div class="metro-line">
-            <div class="station start">浅草</div>
-            <div class="track"></div>
-            <div class="station">稲荷町</div>
-            <div class="track"></div>
-            <div class="station">上野</div>
+        <div class="station" id="asakusa">浅草</div>
+        <div class="track"></div>
+        <div class="station" id="ueno">上野</div>
+      </div>
+      
+      <p>1927年（昭和2年）12月30日、人々は日本初の地下鉄に乗るため、浅草駅に長蛇の列を作りました。9分間で移動できる未来が、ついに現実になったのです。</p>
+    </section>
+
+    <section class="timeline-section">
+      <h2>夢から現実へ：地下鉄への道のり</h2>
+      
+      <div class="timeline" id="timeline">
+        <div class="timeline-item" data-year="1914">
+          <h3>1914年</h3>
+          <p>早稲田大学の教授・後藤象二郎が「東京地下鉄道株式会社」を設立。日本初の地下鉄計画が始動</p>
         </div>
-    </header>
+        <div class="timeline-item" data-year="1920">
+          <h3>1920年</h3>
+          <p>関東大震災からの復興計画に地下鉄が含まれる。交通渋滞解消のための切り札に</p>
+        </div>
+        <div class="timeline-item" data-year="1925">
+          <h3>1925年</h3>
+          <p>浅草駅の建設開始。日本人技術者と共に海外の専門家も参加。難工事との戦いが始まる</p>
+        </div>
+        <div class="timeline-item highlight" data-year="1927">
+          <h3>1927年12月30日</h3>
+          <p>東京地下鉄道・浅草駅〜上野駅間（2.2km）が開業。初日に5万7000人が利用。切符を求める行列は駅の外まで</p>
+        </div>
+        <div class="timeline-item" data-year="1934">
+          <h3>1934年</h3>
+          <p>新橋まで延伸され、「銀座線」の原型が完成</p>
+        </div>
+        <div class="timeline-item" data-year="2004">
+          <h3>2004年</h3>
+          <p>東京地下鉄（東京メトロ）として民営化</p>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <section class="intro">
-            <p class="highlight">1927年12月30日、東京の地下で革命が起きました。</p>
-            <p>浅草駅から上野駅までの僅か2.2kmの区間に、日本初の地下鉄が開通しました。この短い路線は、日本の都市交通の歴史を永遠に変えることになります。</p>
-            
-            <div class="scroll-cta">
-                <p>日本初の地下鉄の物語を辿る</p>
-                <div class="arrow">↓</div>
-            </div>
-        </section>
+    <section class="heroes">
+      <h2>地下に鉄道を作った先駆者たち</h2>
+      
+      <div class="hero-card">
+        <div class="hero-icon">👨‍🔧</div>
+        <div class="hero-content">
+          <h3>早川徳次</h3>
+          <p>「地下鉄の父」と呼ばれる実業家。東京の交通を変えるという夢を持ち、日本初の地下鉄建設を主導。政財界の反対を押し切り、不可能と言われた事業を実現させた</p>
+        </div>
+      </div>
+      
+      <div class="hero-card">
+        <div class="hero-icon">📐</div>
+        <div class="hero-content">
+          <h3>伊東忠太</h3>
+          <p>日本を代表する建築家。浅草駅の建築デザインを担当し、和洋折衷の近代的な駅舎を設計。東京の新しい顔となる駅を作り上げた</p>
+        </div>
+      </div>
+      
+      <div class="hero-card">
+        <div class="hero-icon">👷</div>
+        <div class="hero-content">
+          <h3>名もなき工事作業員たち</h3>
+          <p>命の危険と隣り合わせの地下工事に従事した数千人の作業員たち。未経験の地下鉄工事で、手作業での掘削や湧水との闘いを続け、日本の近代化を支えた</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="timeline-section">
-            <h2>地下鉄誕生への道のり</h2>
-            <p>「地下を走る鉄道」というアイデアは、どのようにして実現したのでしょうか？</p>
-            
-            <div class="timeline" id="timeline">
-                <div class="timeline-item" data-year="1914">
-                    <h3>日本初の地下鉄構想</h3>
-                    <div class="timeline-content">
-                        <p>早稲田大学の教授・後藤象二郎が初めて「地下鉄道」の構想を発表。当時は「空想的」と批判されました。</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-year="1920">
-                    <h3>東京地下鉄道株式会社設立</h3>
-                    <div class="timeline-content">
-                        <p>実業家・早川徳次が会社を設立。資金調達は難航し、「デパート地下街開発」という名目で投資を募りました。</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-year="1925">
-                    <h3>工事開始</h3>
-                    <div class="timeline-content">
-                        <p>「大江戸」の地下に穴を掘る前代未聞の工事が始まります。軟弱地盤との闘いの日々が始まりました。</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-year="1927.12">
-                    <h3>ついに開業</h3>
-                    <div class="timeline-content">
-                        <p>浅草-上野間が開業。開業初日には3万8千人もの乗客が訪れ、「地下鉄博覧会」と呼ばれるほどの賑わいを見せました。</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-year="1934">
-                    <h3>新橋まで延伸</h3>
-                    <div class="timeline-content">
-                        <p>上野から新橋まで延伸され、東京の大動脈として機能し始めます。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-navigation">
-                <button id="prev-btn" aria-label="前の出来事">←</button>
-                <button id="next-btn" aria-label="次の出来事">→</button>
-            </div>
-        </section>
+    <section class="facts">
+      <h2>意外と知らない？東京地下鉄道の驚きの事実</h2>
+      
+      <div class="facts-container">
+        <div class="fact-card active" id="fact1">
+          <h3>地下鉄は「見世物」だった</h3>
+          <p>開業当初、多くの人が乗車目的ではなく「地下鉄を見るため」だけに切符を買った。地下に走る電車は当時の最先端技術であり、まさに都市の観光スポットだった</p>
+        </div>
+        
+        <div class="fact-card" id="fact2">
+          <h3>ロンドンより50年遅れの開業</h3>
+          <p>世界初の地下鉄はロンドンで1863年に開業。日本の地下鉄はそれから約50年後の実現となった。しかし技術的には当時の最先端を取り入れた</p>
+        </div>
+        
+        <div class="fact-card" id="fact3">
+          <h3>切符は現在の約5倍の価格</h3>
+          <p>開業当時の運賃は10銭。当時の銭湯が2銭、牛丼が15銭だったことを考えると、現在の価値で500円以上に相当する高級な交通手段だった</p>
+        </div>
+        
+        <div class="fact-card" id="fact4">
+          <h3>電車は「新型」ではなかった</h3>
+          <p>資金不足から、最初の車両は東京市電から改造されたものを使用。新型車両が導入されたのは数年後のことだった</p>
+        </div>
+      </div>
+      
+      <div class="facts-nav">
+        <button id="prevFact" aria-label="前の事実へ">←</button>
+        <div class="fact-indicators">
+          <span class="indicator active" data-fact="1"></span>
+          <span class="indicator" data-fact="2"></span>
+          <span class="indicator" data-fact="3"></span>
+          <span class="indicator" data-fact="4"></span>
+        </div>
+        <button id="nextFact" aria-label="次の事実へ">→</button>
+      </div>
+    </section>
 
-        <section class="hero-story">
-            <h2>地下鉄を作った男 - 早川徳次の挑戦</h2>
-            <div class="hero-container">
-                <div class="hero-portrait"></div>
-                <div class="hero-info">
-                    <p>「地下に鉄道を通す？無謀だ」</p>
-                    <p>「東京の地盤では不可能だ」</p>
-                    <p>「早川の夢物語だ」</p>
-                    
-                    <p>地下鉄建設を提案した早川徳次は、こうした批判を毎日のように浴びていました。</p>
-                    
-                    <p>実業家として成功していた早川は、ロンドンの地下鉄に感銘を受け、日本でも実現したいと考えました。しかし、関東大震災後の東京では、新たなインフラ整備の資金を集めるのは困難でした。</p>
-                    
-                    <p>早川は私財を投げ打ち、「地下街開発」という名目で投資家を説得。自ら現場に立ち、軟弱な地盤との闘いを続けました。</p>
-                    
-                    <p>計画から13年、数々の困難を乗り越え、ついに日本初の地下鉄は開業しました。</p>
-                </div>
-            </div>
-        </section>
+    <section class="quiz-section">
+      <h2>あなたの地下鉄知識をテスト</h2>
+      <div id="quizContainer">
+        <div id="quizQuestion"></div>
+        <div id="quizOptions"></div>
+        <div id="quizResult"></div>
+        <button id="nextQuestion" style="display:none;">次の問題</button>
+        <div id="quizScore" style="display:none;"></div>
+        <button id="restartQuiz" style="display:none;">もう一度挑戦</button>
+      </div>
+    </section>
 
-        <section class="facts-section">
-            <h2>驚きの事実 - 知られざる地下鉄物語</h2>
-            <div class="quiz-container" id="quiz-container">
-                <div class="quiz-card active">
-                    <div class="quiz-question">当時の地下鉄車両は何と呼ばれていた？</div>
-                    <div class="quiz-options">
-                        <button class="quiz-option" data-correct="false">東京号</button>
-                        <button class="quiz-option" data-correct="false">地下号</button>
-                        <button class="quiz-option" data-correct="true">銀座線車</button>
-                        <button class="quiz-option" data-correct="false">モグラ号</button>
-                    </div>
-                    <div class="quiz-explanation hidden">
-                        <p>正解は「銀座線車」です。当時は「銀座線」という名前はなく、「地下鉄」と呼ばれていましたが、車両は「銀座線車」と呼ばれていました。後に路線名として「銀座線」が正式に採用されました。</p>
-                    </div>
-                </div>
-                <div class="quiz-card">
-                    <div class="quiz-question">開業時の運賃はいくらだった？</div>
-                    <div class="quiz-options">
-                        <button class="quiz-option" data-correct="false">5銭</button>
-                        <button class="quiz-option" data-correct="true">10銭</button>
-                        <button class="quiz-option" data-correct="false">15銭</button>
-                        <button class="quiz-option" data-correct="false">20銭</button>
-                    </div>
-                    <div class="quiz-explanation hidden">
-                        <p>正解は「10銭」です。当時のうどん1杯が約15銭、新聞1部が3銭程度だったことを考えると、かなり高額でした。それでも「地下の乗り物」という珍しさから、多くの人が利用しました。</p>
-                    </div>
-                </div>
-                <div class="quiz-card">
-                    <div class="quiz-question">建設時に最も困難だった問題は？</div>
-                    <div class="quiz-options">
-                        <button class="quiz-option" data-correct="true">軟弱地盤</button>
-                        <button class="quiz-option" data-correct="false">資金不足</button>
-                        <button class="quiz-option" data-correct="false">技術者不足</button>
-                        <button class="quiz-option" data-correct="false">政治的反対</button>
-                    </div>
-                    <div class="quiz-explanation hidden">
-                        <p>正解は「軟弱地盤」です。東京の地盤は非常に軟弱で、工事中に何度も陥没事故が発生しました。特に隅田川付近では湧水との闘いが続き、当時の最新技術「シールド工法」を導入して対応しました。</p>
-                    </div>
-                </div>
-                <div class="quiz-card">
-                    <div class="quiz-question">開業日に乗車した人数は？</div>
-                    <div class="quiz-options">
-                        <button class="quiz-option" data-correct="false">約1万人</button>
-                        <button class="quiz-option" data-correct="false">約2万人</button>
-                        <button class="quiz-option" data-correct="true">約3万8千人</button>
-                        <button class="quiz-option" data-correct="false">約5万人</button>
-                    </div>
-                    <div class="quiz-explanation hidden">
-                        <p>正解は「約3万8千人」です。当初の予想を大きく上回る乗客が訪れ、切符を買うための行列ができました。多くの人は「乗り物」としてではなく「見世物」として地下鉄を体験しに来たのです。</p>
-                    </div>
-                </div>
-                <div class="quiz-navigation">
-                    <div class="quiz-progress">
-                        <span class="current-question">1</span>/<span class="total-questions">4</span>
-                    </div>
-                    <button id="quiz-next" aria-label="次の質問">次の質問 →</button>
-                </div>
-            </div>
-        </section>
+    <section class="then-now">
+      <h2>1927年と今：東京地下鉄の進化</h2>
+      
+      <div class="comparison-table">
+        <div class="comparison-row header">
+          <div class="comparison-cell"></div>
+          <div class="comparison-cell">1927年</div>
+          <div class="comparison-cell">2025年（現在）</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell">路線数</div>
+          <div class="comparison-cell">1路線</div>
+          <div class="comparison-cell">13路線</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell">駅数</div>
+          <div class="comparison-cell">2駅</div>
+          <div class="comparison-cell">180駅以上</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell">総延長</div>
+          <div class="comparison-cell">2.2km</div>
+          <div class="comparison-cell">約400km</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell">1日の乗客数</div>
+          <div class="comparison-cell">約1万人</div>
+          <div class="comparison-cell">約700万人</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell">最高速度</div>
+          <div class="comparison-cell">時速45km</div>
+          <div class="comparison-cell">時速80km</div>
+        </div>
+      </div>
+    </section>
 
-        <section class="then-now">
-            <h2>昨日と今日 - 98年の変化</h2>
-            <div class="comparison">
-                <div class="then">
-                    <h3>1927年</h3>
-                    <ul>
-                        <li>区間：浅草-上野（2.2km）</li>
-                        <li>駅数：3駅</li>
-                        <li>車両：木造車両</li>
-                        <li>速度：最高時速45km</li>
-                        <li>運賃：10銭</li>
-                        <li>乗客数：1日約6万人</li>
-                    </ul>
-                </div>
-                <div class="now">
-                    <h3>2025年（現在）</h3>
-                    <ul>
-                        <li>区間：浅草-渋谷（14.3km）</li>
-                        <li>駅数：19駅</li>
-                        <li>車両：アルミ車両</li>
-                        <li>速度：最高時速80km</li>
-                        <li>運賃：170円〜</li>
-                        <li>乗客数：1日約約100万人</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <section class="legacy">
+      <h2>地下鉄がもたらした未来</h2>
+      <p>浅草と上野を結ぶ短い線路から始まった日本の地下鉄は、今や東京の生命線となり、約1370万人が毎日利用する世界最大規模の地下鉄ネットワークへと成長しました。</p>
+      <p>日本初の地下鉄は、単なる交通機関を超え、都市の発展と人々の生活様式を根本から変えました。そして今、AIや自動運転技術の導入など、次の100年に向けた新たな革命が始まっています。</p>
+      <p class="quote">"地下鉄は都市の血管であり、その鼓動が止まれば、都市の生命も止まる"<br><span>— 早川徳次</span></p>
+    </section>
+  </main>
 
-        <section class="legacy">
-            <h2>私たちの暮らしを変えた革命</h2>
-            <p>日本初の地下鉄は、単なる乗り物ではありませんでした。それは、私たちの暮らし方を根本から変えた「革命」だったのです。</p>
-            
-            <div class="impact-points">
-                <div class="impact-item">
-                    <h3>都市の拡大</h3>
-                    <p>地下鉄の登場により、人々は郊外に住み、都心に通勤するライフスタイルが可能になりました。</p>
-                </div>
-                <div class="impact-item">
-                    <h3>都市文化の誕生</h3>
-                    <p>地下鉄は新しい商業施設や文化施設の開発を促進し、「銀座文化」を全国に広げました。</p>
-                </div>
-                <div class="impact-item">
-                    <h3>技術革新の象徴</h3>
-                    <p>「不可能」と言われた地下鉄建設の成功は、戦後の高度経済成長を支える自信と技術の礎となりました。</p>
-                </div>
-            </div>
-            
-            <p class="final-thought">98年前に「夢物語」と嘲笑された地下鉄は、今や東京の血管として、毎日何百万人もの人々を運び続けています。浅草から上野まで、わずか2.2kmの路線から始まった革命は、私たちの暮らしに今も息づいています。</p>
-        </section>
-    </main>
+  <footer>
+    <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+    <p>記載されている歴史的事実や数値には誤りが含まれる可能性があります。詳細は公式の歴史資料を参照してください。</p>
+  </footer>
 
-    <footer>
-        <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
-    </footer>
-
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

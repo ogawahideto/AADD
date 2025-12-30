@@ -3,133 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Interactive timeline of the 1936-37 Flint Sit-Down Strike that transformed American labor rights and established the UAW.">
+    <meta name="description" content="Experience the historic 1936-37 Flint Sit-Down Strike that transformed American labor rights through an interactive timeline">
     <meta property="og:title" content="44 Days That Changed Labor: The Flint Sit-Down Strike">
-    <meta property="og:description" content="Explore the 44-day sit-down strike that transformed American labor history through an interactive timeline.">
+    <meta property="og:description" content="Discover how auto workers in Flint stood up by sitting down, forever changing American labor relations">
     <meta property="og:type" content="website">
     <title>44 Days That Changed Labor: The Flint Sit-Down Strike</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../../index.html" class="back-link">← Back to All Apps</a>
-        </nav>
-        <div class="header-content">
-            <h1>44 Days That Changed Labor</h1>
-            <h2>The Flint Sit-Down Strike of 1936-37</h2>
-            <div class="anniversary-badge">
-                <span class="years">89</span>
-                <span class="anniversary-text">YEARS AGO</span>
-            </div>
-        </div>
+        <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        <h1>44 Days That Changed Labor</h1>
+        <h2>The 1936-37 Flint Sit-Down Strike</h2>
     </header>
 
     <main>
-        <section class="intro">
-            <div class="factory-animation">
-                <div class="factory-windows"></div>
-                <div class="factory-body"></div>
-            </div>
-            <div class="intro-text">
-                <p>On <strong>December 30, 1936</strong>, auto workers in Flint, Michigan took the bold step that would transform American labor relations forever: they stopped working, sat down at their machines, and refused to leave.</p>
-                <p>For <strong>44 days</strong>, these ordinary workers occupied GM factories in a standoff that would lead to the recognition of the United Auto Workers union and establish the fundamental right to collective bargaining in America.</p>
-            </div>
-        </section>
-
-        <section class="timeline-container">
-            <h2>Journey Through the Strike</h2>
-            <p class="timeline-instructions">Scroll through the timeline or click on events to explore this historic labor action.</p>
-            
-            <div class="timeline-navigation">
-                <button id="prev-btn" aria-label="Previous event">◀</button>
-                <div id="timeline">
-                    <div class="timeline-track"></div>
-                </div>
-                <button id="next-btn" aria-label="Next event">▶</button>
-            </div>
-            
-            <div id="event-details">
-                <div class="event-date"></div>
-                <h3 class="event-title"></h3>
-                <p class="event-description"></p>
-                <div class="event-story"></div>
-                <div class="perspective-toggle">
-                    <button class="perspective-btn active" data-perspective="worker">Worker</button>
-                    <button class="perspective-btn" data-perspective="management">Management</button>
-                    <button class="perspective-btn" data-perspective="public">Public</button>
+        <section id="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <p class="date-marker">December 30, 1936 - February 11, 1937</p>
+                    <p class="intro-text">"We decided that we were going to have to use a new kind of weapon... We're going to sit down and shut the plant."</p>
+                    <p class="quote-attribution">— Kenneth Malone, UAW organizer</p>
+                    <div class="intro-facts">
+                        <div class="fact">
+                            <span class="fact-number">44</span>
+                            <span class="fact-label">Days</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">2,000+</span>
+                            <span class="fact-label">Workers</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">1</span>
+                            <span class="fact-label">Revolution</span>
+                        </div>
+                    </div>
+                    <button id="start-journey" class="cta-button">Experience Their Story</button>
                 </div>
             </div>
         </section>
 
-        <section class="impact-section">
-            <h2>The Lasting Impact</h2>
-            <div class="impact-cards">
-                <div class="impact-card">
-                    <span class="impact-icon">📈</span>
-                    <h3>Union Growth</h3>
-                    <p>UAW membership grew from 30,000 to over 500,000 members in just one year following the strike.</p>
-                </div>
-                <div class="impact-card">
-                    <span class="impact-icon">💰</span>
-                    <h3>Wage Revolution</h3>
-                    <p>Auto worker wages increased 300% in the decades following union recognition.</p>
-                </div>
-                <div class="impact-card">
-                    <span class="impact-icon">🏠</span>
-                    <h3>Middle Class Growth</h3>
-                    <p>Union contracts helped create America's middle class and post-war prosperity.</p>
-                </div>
-                <div class="impact-card">
-                    <span class="impact-icon">⚖️</span>
-                    <h3>Legal Precedent</h3>
-                    <p>Established legal framework for collective bargaining used by millions today.</p>
+        <section id="timeline-section" class="hidden">
+            <div class="container">
+                <div class="timeline-container">
+                    <div class="timeline-header">
+                        <h3>The 44 Days That Changed Everything</h3>
+                        <div class="timeline-controls">
+                            <button id="prev-event" aria-label="Previous event"><span>◀</span></button>
+                            <div class="timeline-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-indicator"></div>
+                                </div>
+                                <div class="day-counter">Day <span id="current-day">1</span> of 44</div>
+                            </div>
+                            <button id="next-event" aria-label="Next event"><span>▶</span></button>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="event-details">
+                            <div class="event-date"></div>
+                            <h4 class="event-title"></h4>
+                            <p class="event-description"></p>
+                            <div class="event-quote"></div>
+                        </div>
+                        <div class="event-visual">
+                            <div class="event-illustration"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="quote-section">
-            <blockquote>
-                "We stayed in the plant. We wouldn't come out. We wouldn't give up. The idea was to make General Motors recognize our union."
-                <cite>— Victor Reuther, UAW organizer</cite>
-            </blockquote>
-        </section>
-
-        <section class="did-you-know">
-            <h2>Surprising Facts About the Strike</h2>
-            <div class="fact-container">
-                <div class="fact active">
-                    <h3>Women's "Emergency Brigade"</h3>
-                    <p>The strike's secret weapon was the Women's Emergency Brigade - wives, mothers and sisters who formed a militant group breaking windows to provide air when police tear-gassed the factories.</p>
+        <section id="impact-section" class="hidden">
+            <div class="container">
+                <h3>The Legacy</h3>
+                <div class="impact-cards">
+                    <div class="impact-card">
+                        <div class="card-icon worker-icon">👥</div>
+                        <h4>Union Recognition</h4>
+                        <p>UAW became the exclusive bargaining agent for GM workers, setting a precedent across American industries.</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="card-icon wage-icon">💰</div>
+                        <h4>Fair Wages</h4>
+                        <p>5% immediate wage increase and established path for regular pay negotiations based on productivity.</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="card-icon rights-icon">⚖️</div>
+                        <h4>Worker Rights</h4>
+                        <p>Established grievance procedures, seniority protections, and protection from arbitrary dismissal.</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="card-icon national-icon">🇺🇸</div>
+                        <h4>National Impact</h4>
+                        <p>Union membership rose from 3.7 million in 1935 to over 10 million by 1941, reshaping America's middle class.</p>
+                    </div>
                 </div>
-                <div class="fact">
-                    <h3>Strike "University"</h3>
-                    <p>Strikers organized classes inside the occupied factories, teaching labor history, public speaking, and organizing tactics, turning the occupation into an impromptu labor university.</p>
+                <div class="then-now">
+                    <h4>Then vs. Now</h4>
+                    <div class="comparison-slider">
+                        <div class="slider-container">
+                            <div class="before">
+                                <h5>1936</h5>
+                                <ul>
+                                    <li>No job security</li>
+                                    <li>No collective bargaining rights</li>
+                                    <li>No workplace safety standards</li>
+                                    <li>60+ hour workweeks</li>
+                                    <li>Child labor common</li>
+                                </ul>
+                            </div>
+                            <div class="after">
+                                <h5>Today</h5>
+                                <ul>
+                                    <li>Collective bargaining protected by law</li>
+                                    <li>Workplace safety regulations</li>
+                                    <li>40-hour workweek standard</li>
+                                    <li>Child labor laws</li>
+                                    <li>Benefits and retirement plans</li>
+                                </ul>
+                            </div>
+                            <div class="slider-handle" id="slider-handle"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="fact">
-                    <h3>Musical Revolution</h3>
-                    <p>Workers communicated and boosted morale through song. The strike birthed dozens of labor anthems that spread nationwide, creating a musical movement that influenced folk music for generations.</p>
-                </div>
-                <div class="fact">
-                    <h3>The Governor Who Refused</h3>
-                    <p>Michigan's newly elected Governor Frank Murphy refused to send in National Guard troops to forcibly remove strikers, defying immense pressure from GM and business leaders.</p>
-                </div>
-                <div class="fact">
-                    <h3>Global Inspiration</h3>
-                    <p>The sit-down tactic spread globally, inspiring workers in France, Poland and other countries to use the same strategy for gaining labor rights.</p>
+                <div class="final-quote">
+                    <blockquote>"We had to have a union. No man who has ever worked in an automobile factory and who is honest with himself will deny that."</blockquote>
+                    <p class="quote-attribution">— Victor Reuther, UAW organizer</p>
                 </div>
             </div>
-            <div class="fact-navigation">
-                <button id="prev-fact" aria-label="Previous fact">◀</button>
-                <div class="fact-indicators"></div>
-                <button id="next-fact" aria-label="Next fact">▶</button>
+        </section>
+
+        <section id="quiz-section" class="hidden">
+            <div class="container">
+                <h3>Test Your Knowledge</h3>
+                <div class="quiz-container">
+                    <div id="question-container">
+                        <h4 id="question-text"></h4>
+                        <div id="options-container"></div>
+                    </div>
+                    <div id="result-container" class="hidden">
+                        <h4 id="result-text"></h4>
+                        <p id="explanation-text"></p>
+                        <button id="next-question" class="quiz-button">Next Question</button>
+                    </div>
+                    <div id="quiz-complete" class="hidden">
+                        <h4>Quiz Complete!</h4>
+                        <p>You scored <span id="final-score">0</span> out of 3</p>
+                        <button id="restart-timeline" class="quiz-button">Revisit the Timeline</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
-        <p>December 30, 2025 marks the 89th anniversary of the Flint Sit-Down Strike.</p>
+        <div class="container">
+            <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>

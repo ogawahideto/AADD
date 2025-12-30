@@ -1,181 +1,224 @@
-// DOM要素の取得
-document.addEventListener('DOMContentLoaded', () => {
-    // タイムラインの要素取得
-    const timeline = document.getElementById('timeline');
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-
-    // クイズの要素取得
-    const quizCards = document.querySelectorAll('.quiz-card');
-    const quizOptions = document.querySelectorAll('.quiz-option');
-    const quizNext = document.getElementById('quiz-next');
-    const currentQuestion = document.querySelector('.current-question');
-    const totalQuestions = document.querySelector('.total-questions');
-
-    // タイムライン制御用変数
-    let currentIndex = 0;
-    let timelineActive = false;
-
-    // クイズ制御用変数
-    let currentQuizIndex = 0;
-    let quizAnswered = false;
-
-    // タイムライン初期化
-    function initTimeline() {
-        timelineItems[currentIndex].classList.add('active');
-        timelineActive = true;
-
-        // 前ボタンの無効化（初期状態）
-        if (currentIndex === 0) {
-            prevBtn.style.opacity = '0.5';
-            prevBtn.style.cursor = 'not-allowed';
-        }
-    }
-
-    // タイムラインの移動
-    function moveTimeline(direction) {
-        // 移動中は操作を無効化
-        if (!timelineActive) return;
-        timelineActive = false;
-
-        // 現在のアイテムを非アクティブに
-        timelineItems[currentIndex].classList.remove('active');
-
-        // 次のインデックスを計算
-        if (direction === 'next') {
-            currentIndex = (currentIndex + 1) % timelineItems.length;
-        } else {
-            currentIndex = (currentIndex - 1 + timelineItems.length) % timelineItems.length;
-        }
-
-        // ボタンの有効/無効状態を更新
-        prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
-        prevBtn.style.cursor = currentIndex === 0 ? 'not-allowed' : 'pointer';
-        
-        nextBtn.style.opacity = currentIndex === timelineItems.length - 1 ? '0.5' : '1';
-        nextBtn.style.cursor = currentIndex === timelineItems.length - 1 ? 'not-allowed' : 'pointer';
-
-        // 次のアイテムをアクティブに
-        setTimeout(() => {
-            timelineItems[currentIndex].classList.add('active');
-            timelineActive = true;
-        }, 300);
-    }
-
-    // タイムラインボタンのイベントリスナー
-    prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            moveTimeline('prev');
-        }
-    });
-
-    nextBtn.addEventListener('click', () => {
-        if (currentIndex < timelineItems.length - 1) {
-            moveTimeline('next');
-        }
-    });
-
-    // クイズの初期化
-    function initQuiz() {
-        quizCards[currentQuizIndex].classList.add('active');
-        totalQuestions.textContent = quizCards.length;
-        currentQuestion.textContent = currentQuizIndex + 1;
-        quizNext.disabled = true;
-        quizNext.style.opacity = '0.5';
-        quizNext.style.cursor = 'not-allowed';
-    }
-
-    // クイズの回答選択処理
-    quizOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            // 既に回答済みの場合は処理しない
-            if (quizAnswered) return;
-
-            const isCorrect = option.dataset.correct === 'true';
-            const currentCard = quizCards[currentQuizIndex];
-            const explanation = currentCard.querySelector('.quiz-explanation');
-
-            // 正解・不正解のスタイル適用
-            if (isCorrect) {
-                option.classList.add('correct');
-            } else {
-                option.classList.add('incorrect');
-                
-                // 正解の選択肢をハイライト
-                currentCard.querySelectorAll('.quiz-option').forEach(opt => {
-                    if (opt.dataset.correct === 'true') {
-                        opt.classList.add('correct');
-                    }
-                });
-            }
-
-            // 解説を表示
-            explanation.classList.remove('hidden');
-            
-            // 次へボタンを有効化
-            quizNext.disabled = false;
-            quizNext.style.opacity = '1';
-            quizNext.style.cursor = 'pointer';
-            
-            quizAnswered = true;
-        });
-    });
-
-    // 次の問題へ移動
-    quizNext.addEventListener('click', () => {
-        if (!quizAnswered && currentQuizIndex < quizCards.length - 1) return;
-
-        // 現在のカードを非アクティブに
-        quizCards[currentQuizIndex].classList.remove('active');
-
-        // 次の問題へ
-        currentQuizIndex++;
-
-        // 最後の問題だった場合、最初に戻る
-        if (currentQuizIndex >= quizCards.length) {
-            currentQuizIndex = 0;
-        }
-
-        // 次のカードをアクティブに
-        quizCards[currentQuizIndex].classList.add('active');
-        currentQuestion.textContent = currentQuizIndex + 1;
-
-        // 選択肢のスタイルをリセット
-        quizCards[currentQuizIndex].querySelectorAll('.quiz-option').forEach(opt => {
-            opt.classList.remove('correct', 'incorrect');
-        });
-
-        // 解説を非表示
-        quizCards[currentQuizIndex].querySelector('.quiz-explanation').classList.add('hidden');
-
-        // 次へボタンを無効化
-        quizNext.disabled = true;
-        quizNext.style.opacity = '0.5';
-        quizNext.style.cursor = 'not-allowed';
-
-        quizAnswered = false;
-    });
-
-    // 初期化
-    initTimeline();
-    initQuiz();
-
-    // スクロールアニメーション
-    function animateOnScroll() {
-        const elements = document.querySelectorAll('.hero-story, .facts-section, .then-now, .legacy');
-        
-        elements.forEach(element => {
-            const position = element.getBoundingClientRect();
-            
-            // 要素が画面内に入ったらアニメーションクラスを追加
-            if (position.top < window.innerHeight - 100) {
-                element.style.animation = 'fadeIn 0.8s forwards';
-            }
-        });
-    }
-
-    // スクロールイベント
-    window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // 初期状態でもチェック
+// DOM読み込み完了時の処理
+document.addEventListener('DOMContentLoaded', function() {
+  // テーマ切り替え機能
+  setupThemeToggle();
+  
+  // 電車アニメーション
+  animateTrain();
+  
+  // タイムライン初期化
+  initTimeline();
+  
+  // 事実カードの操作
+  setupFactCards();
+  
+  // クイズ機能初期化
+  initQuiz();
 });
+
+// ダークモード切り替え機能
+function setupThemeToggle() {
+  const themeToggle = document.getElementById('themeToggle');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  
+  // システム設定に基づいて初期テーマを設定
+  if (prefersDarkScheme.matches) {
+    document.body.setAttribute('data-theme', 'dark');
+  }
+  
+  themeToggle.addEventListener('click', function() {
+    if (document.body.getAttribute('data-theme') === 'dark') {
+      document.body.removeAttribute('data-theme');
+    } else {
+      document.body.setAttribute('data-theme', 'dark');
+    }
+  });
+}
+
+// 電車アニメーション
+function animateTrain() {
+  const train = document.getElementById('animatedTrain');
+  
+  // CSSアニメーションを適用
+  train.style.animation = 'trainMove var(--train-speed) infinite';
+}
+
+// タイムライン処理
+function initTimeline() {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  
+  // スクロール時のアクティブ化
+  function checkTimelineItems() {
+    timelineItems.forEach(item => {
+      const itemTop = item.getBoundingClientRect().top;
+      const triggerPoint = window.innerHeight * 0.8;
+      
+      if (itemTop < triggerPoint) {
+        item.classList.add('active');
+      }
+    });
+  }
+  
+  // 初期チェックとスクロールイベント設定
+  checkTimelineItems();
+  window.addEventListener('scroll', checkTimelineItems);
+}
+
+// 事実カードの操作
+function setupFactCards() {
+  const factCards = document.querySelectorAll('.fact-card');
+  const prevButton = document.getElementById('prevFact');
+  const nextButton = document.getElementById('nextFact');
+  const indicators = document.querySelectorAll('.indicator');
+  let currentFact = 0;
+  
+  // 表示する事実カードを更新
+  function updateFactCards() {
+    factCards.forEach((card, index) => {
+      card.classList.toggle('active', index === currentFact);
+    });
+    
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === currentFact);
+    });
+  }
+  
+  // 前の事実へ移動
+  prevButton.addEventListener('click', function() {
+    currentFact = (currentFact - 1 + factCards.length) % factCards.length;
+    updateFactCards();
+  });
+  
+  // 次の事実へ移動
+  nextButton.addEventListener('click', function() {
+    currentFact = (currentFact + 1) % factCards.length;
+    updateFactCards();
+  });
+  
+  // インジケーターのクリック処理
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', function() {
+      currentFact = index;
+      updateFactCards();
+    });
+  });
+}
+
+// クイズ機能
+function initQuiz() {
+  const quizContainer = document.getElementById('quizContainer');
+  const questionElement = document.getElementById('quizQuestion');
+  const optionsElement = document.getElementById('quizOptions');
+  const resultElement = document.getElementById('quizResult');
+  const nextButton = document.getElementById('nextQuestion');
+  const scoreElement = document.getElementById('quizScore');
+  const restartButton = document.getElementById('restartQuiz');
+  
+  // クイズの問題と答え
+  const quizData = [
+    {
+      question: '日本で最初の地下鉄が開業したのは何年？',
+      options: ['1907年', '1927年', '1947年', '1967年'],
+      correct: 1,
+      explanation: '正解は1927年（昭和2年）です。1927年12月30日に浅草駅〜上野駅間が開業しました。'
+    },
+    {
+      question: '最初に開業した地下鉄区間の長さは？',
+      options: ['1.0km', '2.2km', '4.5km', '10.0km'],
+      correct: 1,
+      explanation: '正解は2.2kmです。浅草駅から上野駅までの距離で、当時の片道運行時間は約9分でした。'
+    },
+    {
+      question: '日本の地下鉄建設を主導した「地下鉄の父」と呼ばれる人物は？',
+      options: ['伊藤博文', '早川徳次', '五島慶太', '松下幸之助'],
+      correct: 1,
+      explanation: '正解は早川徳次です。東京地下鉄道株式会社の創始者として、日本初の地下鉄建設を主導しました。'
+    }
+  ];
+  
+  let currentQuestion = 0;
+  let score = 0;
+  let answered = false;
+  
+  // 問題を表示
+  function showQuestion() {
+    const question = quizData[currentQuestion];
+    questionElement.textContent = question.question;
+    
+    optionsElement.innerHTML = '';
+    question.options.forEach((option, index) => {
+      const button = document.createElement('div');
+      button.classList.add('quiz-option');
+      button.textContent = option;
+      button.setAttribute('data-index', index);
+      button.addEventListener('click', selectOption);
+      optionsElement.appendChild(button);
+    });
+    
+    resultElement.style.display = 'none';
+    nextButton.style.display = 'none';
+    answered = false;
+  }
+  
+  // 選択肢の選択
+  function selectOption() {
+    if (answered) return;
+    
+    const selectedIndex = parseInt(this.getAttribute('data-index'));
+    const currentQuiz = quizData[currentQuestion];
+    
+    answered = true;
+    
+    // すべての選択肢から既存のクラスを削除
+    document.querySelectorAll('.quiz-option').forEach(option => {
+      option.classList.remove('selected', 'correct', 'wrong');
+    });
+    
+    // 選択した選択肢にクラスを追加
+    this.classList.add('selected');
+    
+    // 正誤判定
+    if (selectedIndex === currentQuiz.correct) {
+      this.classList.add('correct');
+      resultElement.textContent = '正解です！ ' + currentQuiz.explanation;
+      resultElement.className = 'correct';
+      score++;
+    } else {
+      this.classList.add('wrong');
+      const correctOption = document.querySelector(`.quiz-option[data-index="${currentQuiz.correct}"]`);
+      correctOption.classList.add('correct');
+      resultElement.textContent = '不正解です。 ' + currentQuiz.explanation;
+      resultElement.className = 'wrong';
+    }
+    
+    resultElement.style.display = 'block';
+    
+    if (currentQuestion < quizData.length - 1) {
+      nextButton.style.display = 'block';
+    } else {
+      scoreElement.textContent = `あなたのスコア: ${score}/${quizData.length}`;
+      scoreElement.style.display = 'block';
+      restartButton.style.display = 'block';
+    }
+  }
+  
+  // 次の問題に進む
+  nextButton.addEventListener('click', function() {
+    currentQuestion++;
+    if (currentQuestion < quizData.length) {
+      showQuestion();
+    }
+  });
+  
+  // クイズをリスタート
+  restartButton.addEventListener('click', function() {
+    currentQuestion = 0;
+    score = 0;
+    scoreElement.style.display = 'none';
+    restartButton.style.display = 'none';
+    showQuestion();
+  });
+  
+  // クイズ開始
+  showQuestion();
+}
