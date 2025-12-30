@@ -1,0 +1,584 @@
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff4500;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --light-gray: #eee;
+    --dark-gray: #666;
+    --highlight-color: #ffd700;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --metro-blue: #0092d6;
+    --metro-yellow: #ffdd00;
+    --section-padding: 2rem;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: #f0f0f0;
+        --light-gray: #2a2a2a;
+        --dark-gray: #999;
+        --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ヘッダースタイル */
+header {
+    background: linear-gradient(135deg, var(--metro-blue) 0%, #004080 100%);
+    color: white;
+    padding: 2rem 1rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.back-link {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: transform var(--transition-speed);
+    z-index: 10;
+}
+
+.back-link:hover {
+    transform: translateX(-3px);
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.metro-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.train {
+    width: 60px;
+    height: 30px;
+    background-color: var(--metro-yellow);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    animation: trainMove 4s infinite linear;
+}
+
+.train:before, .train:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background-color: #444;
+    bottom: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.train:before {
+    left: 10px;
+}
+
+.train:after {
+    right: 10px;
+}
+
+.tracks {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    background-color: #555;
+    bottom: 35%;
+    border-radius: 2px;
+}
+
+@keyframes trainMove {
+    0%, 100% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.date {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* メインコンテンツスタイル */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin: 3rem 0;
+    padding: var(--section-padding);
+    border-radius: var(--border-radius);
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+    section {
+        background-color: #1e1e1e;
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.intro {
+    margin-top: -2rem;
+    position: relative;
+    z-index: 3;
+}
+
+.lead {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    
+    .text-content {
+        flex: 3;
+    }
+    
+    .visual-element {
+        flex: 2;
+    }
+}
+
+.comparison-scene {
+    height: 200px;
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+}
+
+.old-tokyo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    background: linear-gradient(to bottom, #87CEEB 0%, #87CEEB 70%, #8B4513 70%, #8B4513 100%);
+}
+
+.rickshaw, .tram, .pedestrians {
+    position: absolute;
+}
+
+.rickshaw {
+    width: 30px;
+    height: 30px;
+    background-color: #8B4513;
+    bottom: 15px;
+    left: 20px;
+    border-radius: 5px;
+    animation: moveRickshaw 10s infinite linear;
+}
+
+.tram {
+    width: 50px;
+    height: 25px;
+    background-color: #CD5C5C;
+    bottom: 15px;
+    left: 100px;
+    border-radius: 3px;
+    animation: moveTram 15s infinite linear;
+}
+
+.pedestrians {
+    width: 8px;
+    height: 20px;
+    background-color: #000;
+    bottom: 15px;
+    right: 40px;
+    animation: movePedestrians 20s infinite linear;
+}
+
+@keyframes moveRickshaw {
+    0% { left: -30px; }
+    100% { left: 100%; }
+}
+
+@keyframes moveTram {
+    0% { left: -50px; }
+    100% { left: 100%; }
+}
+
+@keyframes movePedestrians {
+    0% { right: -10px; }
+    100% { right: 100%; }
+}
+
+/* タイムラインスタイル */
+.timeline-section p {
+    margin-bottom: 1.5rem;
+}
+
+.timeline-container {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--light-gray);
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    margin-bottom: 10px;
+    border: 3px solid white;
+    transition: background-color 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-dot {
+        border-color: #1e1e1e;
+    }
+}
+
+.timeline-item.active .timeline-dot {
+    background-color: var(--secondary-color);
+    transform: scale(1.3);
+}
+
+.timeline-year {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.timeline-detail {
+    display: none;
+    padding: 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-detail {
+        background-color: #2a2a2a;
+    }
+}
+
+.timeline-detail.active {
+    display: block;
+}
+
+.timeline-detail h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.fun-fact {
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: rgba(255, 221, 0, 0.1);
+    border-left: 3px solid var(--highlight-color);
+    font-style: italic;
+}
+
+.fact-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background-color: var(--highlight-color);
+    color: black;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ファクトカードスタイル */
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.fact-card {
+    padding: 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed);
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+/* クイズセクションスタイル */
+#quiz-container {
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+#question {
+    margin-bottom: 1.5rem;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option {
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.option:hover {
+    border-color: var(--primary-color);
+}
+
+.option.correct {
+    background-color: rgba(40, 167, 69, 0.2);
+    border-color: var(--success-color);
+}
+
+.option.incorrect {
+    background-color: rgba(220, 53, 69, 0.2);
+    border-color: var(--error-color);
+}
+
+#result-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+#next-btn, #restart-btn {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #0052a3;
+}
+
+#progress-container {
+    margin-top: 2rem;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    width: 25%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+#progress-text {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: var(--dark-gray);
+}
+
+/* フッタースタイル */
+footer {
+    background-color: var(--light-gray);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .timeline {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+    
+    .timeline::-webkit-scrollbar {
+        height: 5px;
+    }
+    
+    .timeline::-webkit-scrollbar-thumb {
+        background-color: var(--dark-gray);
+        border-radius: 5px;
+    }
+    
+    .timeline-item {
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .metro-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .train {
+        width: 40px;
+        height: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
