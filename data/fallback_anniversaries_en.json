@@ -52,8 +52,8 @@
   "12-28": [
     {
       "year": 1895,
-      "title": "First commercial movie screening - Lumière Brothers",
-      "description": "Auguste and Louis Lumière held the first commercial public screening of projected motion pictures at the Grand Café in Paris. This event marked the birth of cinema as we know it today, revolutionizing entertainment and visual storytelling for generations to come.",
+      "title": "First commercial movie screening - Lumi\uff83\uff68re Brothers",
+      "description": "Auguste and Louis Lumi\uff83\uff68re held the first commercial public screening of projected motion pictures at the Grand Caf\uff83\uff69 in Paris. This event marked the birth of cinema as we know it today, revolutionizing entertainment and visual storytelling for generations to come.",
       "category": "cultural"
     },
     {
@@ -117,7 +117,7 @@
     {
       "year": 1945,
       "title": "End of World War II - Japan surrenders",
-      "description": "Emperor Hirohito announced Japan's unconditional surrender in World War II via radio broadcast, marking the end of the war. This day is commemorated in Japan as the 'day of the end of the war' (終戦記念日) and represents a turning point in Japanese history.",
+      "description": "Emperor Hirohito announced Japan's unconditional surrender in World War II via radio broadcast, marking the end of the war. This day is commemorated in Japan as the 'day of the end of the war' (\u90a8\u3088\u59f6\u96aa\u4f1c\uff7f\uff75\u8b4c\uff65) and represents a turning point in Japanese history.",
       "category": "historical"
     }
   ],
@@ -199,6 +199,20 @@
       "title": "World Wide Web becomes publicly available",
       "description": "Tim Berners-Lee and his team at CERN made the World Wide Web available to the public, releasing the first web browser and server software. This marked the beginning of the internet revolution that would transform communication, commerce, and access to information globally.",
       "category": "scientific"
+    }
+  ],
+  "12-30": [
+    {
+      "year": 1922,
+      "title": "Soviet Union Established",
+      "description": "The Union of Soviet Socialist Republics (USSR) was formally established, uniting Russia and several other Soviet republics. This marked the creation of the world's first communist state, which would become a global superpower and shape world politics for the next seven decades.",
+      "category": "political"
+    },
+    {
+      "year": 1936,
+      "title": "Flint Sit-Down Strike Begins",
+      "description": "Auto workers in Flint, Michigan began a sit-down strike at General Motors factories, which would last 44 days. This historic labor action led to the recognition of the United Auto Workers union and transformed American labor relations, establishing the right to collective bargaining.",
+      "category": "cultural"
     }
   ]
 }
