@@ -1,0 +1,24 @@
+{
+  "date": "2025-12-30",
+  "anniversary": {
+    "title": "Flint Sit-Down Strike Begins",
+    "description": "Auto workers in Flint, Michigan began a sit-down strike at General Motors factories, which would last 44 days. This historic labor action led to the recognition of the United Auto Workers union and transformed American labor relations, establishing the right to collective bargaining.",
+    "year": 1936,
+    "category": "cultural",
+    "source": "Fallback"
+  },
+  "app": {
+    "app_title": "44 Days That Changed Labor: The Flint Sit-Down Strike",
+    "description": "Experience the dramatic 1936-37 Flint sit-down strike through an interactive timeline with multiple perspectives",
+    "tags": [
+      "labor history",
+      "interactive timeline",
+      "UAW",
+      "workers rights",
+      "historical"
+    ],
+    "estimated_engagement": "3-6 minutes"
+  },
+  "generated_at": "2025-12-30T11:03:08.816030",
+  "generator_version": "1.0.0"
+}
