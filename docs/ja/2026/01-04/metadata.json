@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-04",
+  "anniversary": {
+    "title": "日本とアメリカの間で国際電話が開通。",
+    "description": "日本とアメリカの間で国際電話が開通。",
+    "year": 1948,
+    "category": "historical",
+    "source": "Wikipedia (ja)"
+  },
+  "app": {
+    "app_title": "声の架け橋: 日米国際電話開通78周年の軌跡",
+    "description": "1948年1月4日に実現した日米間の国際電話開通から通信技術の変遷を体験できるインタラクティブアプリ",
+    "tags": [
+      "歴史",
+      "通信技術",
+      "日米関係",
+      "戦後復興",
+      "インタラクティブ"
+    ],
+    "estimated_engagement": "3-4分"
+  },
+  "generated_at": "2026-01-04T09:02:14.670925",
+  "generator_version": "1.0.0"
+}
