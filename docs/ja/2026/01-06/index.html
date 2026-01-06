@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="荻田泰永の壮大な南極点徒歩到達の旅を体験する。日本人初の無補給単独徒歩南極点到達の偉業を振り返る">
+    <meta property="og:title" content="極限への挑戦：荻田泰永の南極点徒歩到達">
+    <meta property="og:description" content="荻田泰永の壮大な南極点徒歩到達の旅を体験する。日本人初の無補給単独徒歩南極点到達の偉業を振り返る">
+    <meta property="og:type" content="website">
+    <title>極限への挑戦：荻田泰永の南極点徒歩到達</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
+        </nav>
+        <div class="theme-toggle">
+            <button id="theme-button" aria-label="テーマ切替">🌓</button>
+        </div>
+        <div class="header-content">
+            <h1>極限への挑戦</h1>
+            <h2>荻田泰永、日本人初の偉業から8年</h2>
+            <p class="subtitle">2018年1月6日 - 南極点無補給単独徒歩到達</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <div class="south-pole-marker"></div>
+                <div class="snow"></div>
+            </div>
+            <blockquote>
+                「単独というのは、判断から全てが自分にかかっているという意味。孤独との闘いでもある」
+                <cite>— 荻田泰永</cite>
+            </blockquote>
+        </section>
+
+        <section class="intro">
+            <h2>南極点への道のり</h2>
+            <p>2018年1月6日、荻田泰永は南極大陸の厳しい環境の中、日本人として初めて無補給・単独徒歩での南極点到達を成し遂げました。54日間かけて約1,130kmを歩き続けた壮絶な挑戦は、人間の限界への挑戦と意志の力を示す偉業となりました。</p>
+            
+            <div class="fact-highlight">
+                <h3>驚きの事実</h3>
+                <ul>
+                    <li>荻田は約80kgの装備を自力で引きずりながら進んだ</li>
+                    <li>氷点下30度を超える極寒の中で進み続けた</li>
+                    <li>1日あたり最大10時間、20km以上を歩いた日も</li>
+                    <li>54日間、他の人間と一切接触せず完全孤独での挑戦</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="journey-map">
+            <h2>壮大な南極の旅</h2>
+            <div class="map-container">
+                <div class="map">
+                    <div class="route" id="route-path"></div>
+                    <div class="marker start" title="ヘルクネス基地（出発地点）"></div>
+                    <div class="marker end" title="南極点（到着地点）"></div>
+                </div>
+                <div class="map-controls">
+                    <button id="play-journey" aria-label="旅の再生">旅を追体験する</button>
+                </div>
+            </div>
+            <div class="journey-stats">
+                <div class="stat">
+                    <span class="number">1,130</span>
+                    <span class="unit">km</span>
+                    <span class="label">総距離</span>
+                </div>
+                <div class="stat">
+                    <span class="number">54</span>
+                    <span class="unit">日間</span>
+                    <span class="label">旅の期間</span>
+                </div>
+                <div class="stat">
+                    <span class="number">-30</span>
+                    <span class="unit">°C以下</span>
+                    <span class="label">極低温</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="challenges">
+            <h2>極限の挑戦</h2>
+            <div class="challenge-cards">
+                <div class="card">
+                    <h3>身体的限界</h3>
+                    <p>極寒の環境で、荻田は凍傷や低体温症と常に隣り合わせでした。睡眠不足と絶え間ない疲労に加え、約80kgのソリを引きながら1日平均20kmを進む必要がありました。</p>
+                </div>
+                <div class="card">
+                    <h3>精神的孤独</h3>
+                    <p>54日間の完全な孤独。他者の声を聞くことなく、すべての判断と決断を自分一人で下さなければならない状況。精神的な忍耐力が極限まで試されました。</p>
+                </div>
+                <div class="card">
+                    <h3>ナビゲーションの難しさ</h3>
+                    <p>一面の白銀世界で地形の目印がほとんどない中、GPSと太陽のみを頼りに進路を決定。ホワイトアウト（視界不良）の状態では方向感覚を完全に失うリスクがありました。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2>南極挑戦クイズ</h2>
+            <p>荻田泰永の南極点到達についてどれだけ知っていますか？</p>
+            <div id="quiz-container">
+                <div id="question-container">
+                    <p id="question-text">質問がここに表示されます</p>
+                    <div id="options-container">
+                        <!-- 選択肢がここに動的に追加されます -->
+                    </div>
+                </div>
+                <div id="result-container" class="hidden">
+                    <p id="result-text"></p>
+                    <p id="correct-answer"></p>
+                </div>
+                <div id="quiz-controls">
+                    <button id="next-button">次の質問</button>
+                    <div id="progress-indicator">
+                        <span id="current-question">1</span>/<span id="total-questions">4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy">
+            <h2>荻田泰永の遺産</h2>
+            <p>荻田の偉業は単なる冒険以上のものです。極限環境での人間の可能性を示し、後の世代に挑戦することの意義を伝える貴重な遺産となっています。</p>
+            
+            <div class="quote-container">
+                <blockquote>
+                    「未知の世界への挑戦は、私たち自身の内なる限界を知り、それを超える機会になる」
+                    <cite>— 荻田泰永</cite>
+                </blockquote>
+            </div>
+            
+            <div class="impact">
+                <h3>影響と意義</h3>
+                <ul>
+                    <li>日本の極地探検の新たな歴史を刻む</li>
+                    <li>環境保護と気候変動の啓発活動に貢献</li>
+                    <li>若者に挑戦の精神と自然への敬意を教える</li>
+                    <li>人間の潜在能力と意志の力を証明</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+        <p>実際の荻田泰永氏の南極点到達に関する正確な情報は公式情報源でご確認ください。</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
