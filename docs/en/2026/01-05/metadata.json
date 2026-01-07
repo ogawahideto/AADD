@@ -1,0 +1,23 @@
+{
+  "date": "2026-01-05",
+  "anniversary": {
+    "title": "Golden Gate Bridge construction begins",
+    "description": "Construction began on the Golden Gate Bridge in San Francisco, California. When completed in 1937, it became an iconic symbol of American engineering achievement and one of the most photographed bridges in the world.",
+    "year": 1933,
+    "category": "historical",
+    "source": "Fallback"
+  },
+  "app": {
+    "app_title": "Spanning the Gate: The Golden Gate Bridge Story",
+    "description": "Explore the engineering marvel of the Golden Gate Bridge through an interactive timeline and quiz",
+    "tags": [
+      "history",
+      "engineering",
+      "interactive",
+      "education"
+    ],
+    "estimated_engagement": "3-6 minutes"
+  },
+  "generated_at": "2026-01-07T13:41:18.428989",
+  "generator_version": "1.0.0"
+}

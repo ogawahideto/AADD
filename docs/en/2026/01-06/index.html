@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the forgotten legacy of Colegio de Santa Cruz de Tlatelolco, the first European higher learning institution in the Americas, established in 1536 in Mexico.">
+    <meta property="og:title" content="Tlatelolco: The First Academy of the Americas">
+    <meta property="og:description" content="Discover the groundbreaking educational institution that bridged two worlds during the early colonial period of Mexico.">
+    <meta property="og:type" content="website">
+    <title>Tlatelolco: The First Academy of the Americas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        </nav>
+        <div class="title-container">
+            <h1 class="main-title">Colegio de Santa Cruz de Tlatelolco</h1>
+            <h2 class="subtitle">The First European Academy in the Americas</h2>
+            <div class="anniversary">
+                <span class="years">490</span>
+                <span class="year-text">Years Ago</span>
+                <span class="date">January 6, 1536</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction" class="content-section">
+            <h2 class="section-title">Two Worlds Colliding</h2>
+            <p>Just fifteen years after the fall of the Aztec Empire, something revolutionary happened in the shadow of the ruins of Tenochtitlan. In the midst of conquest and colonization, an experiment in education and cultural exchange began that would shape the intellectual landscape of the New World.</p>
+            
+            <div class="quote-container">
+                <blockquote>"A place where the sons of nobles might be gathered together and secluded from the influences of their still idolatrous parents and relatives, and where they might be instructed in Christian doctrine and trained to give religious instruction in their turn."</blockquote>
+                <cite>— Bishop Juan de Zumárraga, co-founder</cite>
+            </div>
+        </section>
+
+        <section id="timeline" class="content-section">
+            <h2 class="section-title">A Journey Through Time</h2>
+            <p class="timeline-intro">Follow the remarkable story of this pioneering institution from its founding to its legacy in the Americas.</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-navigation">
+                    <button id="prev-btn" class="timeline-nav-btn" aria-label="Previous timeline event">◀</button>
+                    <div id="timeline-bar" class="timeline-bar">
+                        <div id="timeline-progress" class="timeline-progress"></div>
+                    </div>
+                    <button id="next-btn" class="timeline-nav-btn" aria-label="Next timeline event">▶</button>
+                </div>
+                
+                <div id="timeline-display" class="timeline-display">
+                    <div class="timeline-year"></div>
+                    <h3 class="timeline-title"></h3>
+                    <p class="timeline-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="founders" class="content-section">
+            <h2 class="section-title">The Visionaries</h2>
+            <div class="founders-container">
+                <div class="founder">
+                    <div class="founder-avatar" id="mendoza-avatar">AM</div>
+                    <h3>Antonio de Mendoza</h3>
+                    <p class="founder-title">First Viceroy of New Spain</p>
+                    <p>A nobleman appointed by King Charles V to govern the newly conquered territories, Mendoza saw education as a means to create stability in the colony. Unlike many conquistadors, he advocated for a more measured approach to colonization.</p>
+                </div>
+                
+                <div class="founder">
+                    <div class="founder-avatar" id="zumarraga-avatar">JZ</div>
+                    <h3>Juan de Zumárraga</h3>
+                    <p class="founder-title">First Bishop of Mexico</p>
+                    <p>A Franciscan friar who became a protector of indigenous rights, Zumárraga envisioned the college as a place where native nobility could receive education while preserving aspects of their cultural heritage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="legacy" class="content-section">
+            <h2 class="section-title">A Hidden Legacy</h2>
+            <div class="legacy-container">
+                <div class="legacy-item">
+                    <h3>Trilingual Education</h3>
+                    <p>The college taught in Spanish, Latin, and Nahuatl, the Aztec language, creating one of the first multilingual educational systems in the Americas. Students learned astronomy, rhetoric, logic, philosophy, and indigenous medicine.</p>
+                </div>
+                
+                <div class="legacy-item">
+                    <h3>Indigenous Scholars</h3>
+                    <p>Students like Antonio Valeriano and Martín de la Cruz became renowned scholars who preserved indigenous knowledge while mastering European disciplines, creating a unique intellectual tradition.</p>
+                </div>
+                
+                <div class="legacy-item">
+                    <h3>The Florentine Codex</h3>
+                    <p>The college facilitated the creation of this monumental work, a 12-volume encyclopedia of indigenous culture, plants, and medicine - one of the most important ethnographic works ever created.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="did-you-know" class="content-section">
+            <h2 class="section-title">Did You Know?</h2>
+            <div class="fact-container">
+                <div class="fact">
+                    <h3>First University Precursor</h3>
+                    <p>Tlatelolco predated Harvard University by more than 100 years, and many other colonial institutions throughout the Americas.</p>
+                </div>
+                
+                <div class="fact">
+                    <h3>Cultural Preservation</h3>
+                    <p>Despite being founded by Spanish colonizers, the college became a sanctuary for indigenous knowledge, preserving Aztec medical practices, botanical knowledge, and historical traditions.</p>
+                </div>
+                
+                <div class="fact">
+                    <h3>Knowledge Exchange</h3>
+                    <p>European scholars came to learn from indigenous experts about local plants, creating some of the first botanical exchanges between the Old and New Worlds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-section" class="content-section">
+            <h2 class="section-title">Test Your Knowledge</h2>
+            <div id="quiz-container">
+                <div id="quiz-question" class="quiz-question"></div>
+                <div id="quiz-options" class="quiz-options"></div>
+                <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+                <button id="quiz-next" class="quiz-next-btn hidden">Next Question</button>
+                <div id="quiz-results" class="quiz-results hidden">
+                    <h3>Quiz Complete!</h3>
+                    <p>You scored <span id="quiz-score">0</span> out of <span id="quiz-total">0</span></p>
+                    <button id="quiz-restart" class="quiz-restart-btn">Try Again</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="reflections" class="content-section">
+            <h2 class="section-title">Reflections</h2>
+            <p>The Colegio de Santa Cruz de Tlatelolco represents a complex moment in history—a time of conquest but also of cultural exchange and preservation. While European colonization brought tremendous suffering, institutions like Tlatelolco created spaces where indigenous knowledge was valued and preserved.</p>
+            
+            <p>Today, as we commemorate its 490th anniversary, we can recognize this institution as both a tool of colonization and a sanctuary of knowledge that helped preserve aspects of pre-Columbian culture that might otherwise have been lost forever.</p>
+            
+            <p>The college stands as a reminder that even in the darkest historical moments, education can become a bridge between cultures and a repository of human wisdom.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

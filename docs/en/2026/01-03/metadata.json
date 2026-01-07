@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-03",
+  "anniversary": {
+    "title": "The Roman legions on the Rhine refuse to declare their allegiance to Galba, instead proclaiming thei...",
+    "description": "The Roman legions on the Rhine refuse to declare their allegiance to Galba, instead proclaiming their legate, Aulus Vitellius, as emperor.[1]",
+    "year": 69,
+    "category": "historical",
+    "source": "Wikipedia"
+  },
+  "app": {
+    "app_title": "The Rhine Rebellion: When Legions Chose Their Emperor",
+    "description": "Interactive experience exploring the pivotal moment when Roman legions chose Vitellius over Galba in 69 CE",
+    "tags": [
+      "Roman Empire",
+      "Year of Four Emperors",
+      "military history",
+      "ancient Rome",
+      "civil war"
+    ],
+    "estimated_engagement": "5-8 minutes"
+  },
+  "generated_at": "2026-01-07T13:36:43.953571",
+  "generator_version": "1.0.0"
+}

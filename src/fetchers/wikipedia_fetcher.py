@@ -55,20 +55,22 @@ class WikipediaFetcher(BaseFetcher):
         # Parse HTML
         soup = BeautifulSoup(response.content, "lxml")
 
-        # Find "Events" section
+        # Find "Events" section - try both old and new HTML structures
         events_section = soup.find("span", id="Events")
-        if not events_section:
+        if events_section:
+            # Old structure: <h2><span id="Events">Events</span></h2>
+            events_heading = events_section.find_parent(["h2", "h3"])
+        else:
+            # New structure: <h2 id="Events">Events</h2>
+            events_heading = soup.find(["h2", "h3"], id="Events")
+
+        if not events_heading:
             logger.warning("No 'Events' section found on Wikipedia page")
             return []
 
-        # Get the parent heading and find the next sibling list
-        events_heading = events_section.find_parent(["h2", "h3"])
-        if not events_heading:
-            logger.warning("Could not find events heading")
-            return []
-
         # Find the next <ul> after the heading
-        events_list = events_heading.find_next_sibling("ul")
+        # Note: Wikipedia's HTML structure changed - <ul> may not be a direct sibling
+        events_list = events_heading.find_next("ul")
         if not events_list:
             logger.warning("No events list found")
             return []

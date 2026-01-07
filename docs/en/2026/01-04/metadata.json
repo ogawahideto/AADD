@@ -1,0 +1,25 @@
+{
+  "date": "2026-01-04",
+  "anniversary": {
+    "title": "Isaac Newton born",
+    "description": "Sir Isaac Newton, one of the most influential scientists of all time, was born in England. His laws of motion and universal gravitation laid the foundation for classical mechanics and revolutionized our understanding of the physical world.",
+    "year": 1643,
+    "category": "scientific",
+    "source": "Fallback"
+  },
+  "app": {
+    "app_title": "Gravity Glitch: Newton's Legacy",
+    "description": "An interactive journey through Sir Isaac Newton's revolutionary scientific discoveries with a gravity simulator and timeline exploration",
+    "tags": [
+      "newton",
+      "science",
+      "physics",
+      "interactive",
+      "gravity",
+      "history"
+    ],
+    "estimated_engagement": "3-6 minutes"
+  },
+  "generated_at": "2026-01-07T13:39:01.636549",
+  "generator_version": "1.0.0"
+}

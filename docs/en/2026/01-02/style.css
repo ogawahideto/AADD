@@ -1,0 +1,412 @@
+/* Base Styles & Variables */
+:root {
+    /* Light theme colors */
+    --background: #f9f6f1;
+    --text: #312c27;
+    --accent: #8c3b30;
+    --accent-light: #b85c4f;
+    --secondary: #526a83;
+    --tertiary: #846b52;
+    --card: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --divider: #e6e0d6;
+    --highlight-bg: #fff4d6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #201b18;
+        --text: #e9e2d9;
+        --accent: #c85a4e;
+        --accent-light: #da8375;
+        --secondary: #6e8cad;
+        --tertiary: #ad9672;
+        --card: #2c2520;
+        --card-shadow: rgba(0, 0, 0, 0.4);
+        --divider: #3d3630;
+        --highlight-bg: #3d2e19;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    color: var(--accent);
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    opacity: 0.9;
+}
+
+h3 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-top: 1.5em;
+    border-bottom: 2px solid var(--divider);
+    padding-bottom: 0.3em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.highlight {
+    background-color: var(--highlight-bg);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.lead-text {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Layout */
+header {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    color: white;
+    padding: 2rem 1rem 3rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-content h1, .header-content h2 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.back-link {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    z-index: 10;
+}
+
+.back-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.anniversary-badge {
+    background-color: var(--accent-light);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.anniversary-badge .years {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.anniversary-badge .text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Quote Styling */
+.quote-container {
+    margin: 2rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    margin-left: 0;
+    color: var(--accent);
+}
+
+blockquote cite {
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+}
+
+/* Timeline */
+#timeline-container {
+    margin: 2rem 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--divider);
+    z-index: 1;
+}
+
+.timeline-events {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.timeline-event {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.timeline-event:hover,
+.timeline-event.active {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.event-marker {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    margin: 0 auto 15px;
+    position: relative;
+    border: 4px solid var(--card);
+}
+
+.event-year {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.event-detail {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 6px 12px var(--card-shadow);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, max-height 0.5s;
+}
+
+.event-detail.active {
+    opacity: 1;
+    max-height: 300px;
+}
+
+/* Fact Box */
+.fact-box {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+.fact-box h4 {
+    margin-top: 0;
+    color: var(--secondary);
+}
+
+.fact-box ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+.fact-box li {
+    margin-bottom: 0.5rem;
+}
+
+/* Interactive Name Selector */
+#name-selector {
+    background-color: var(--card);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+#name-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+#birth-name-container, #papal-name-container {
+    flex: 1;
+    min-width: 200px;
+}
+
+#your-name {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--divider);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--background);
+    color: var(--text);
+    margin-top: 0.3rem;
+}
+
+#papal-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+    display: block;
+    margin-top: 0.3rem;
+}
+
+#name-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.name-btn {
+    padding: 0.6rem 0.3rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.name-btn:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.name-btn.active {
+    background-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-light);
+}
+
+#name-meaning {
+    background-color: var(--background);
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-light);
+}
+
+#name-meaning h4 {
+    margin-top: 0;
+    color: var(--secondary);
+    font-size: 1rem;
+}
+
+#meaning-text {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .anniversary-badge {
+        position: relative;
+        margin: 1rem auto;
+        top: 0;
+        right: auto;
+    }
+    
+    .timeline-events {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .timeline-event {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header {
+        padding: 3rem 1rem 2rem;
+    }
+    
+    #name-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

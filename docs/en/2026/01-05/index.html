@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the engineering marvel of the Golden Gate Bridge construction through an interactive timeline and bridge-building simulation.">
+    <meta property="og:title" content="Spanning the Gate: The Golden Gate Bridge Story">
+    <meta property="og:description" content="Explore the fascinating history of the Golden Gate Bridge construction through interactive timelines and stories.">
+    <meta property="og:type" content="website">
+    <title>Spanning the Gate: The Golden Gate Bridge Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        </nav>
+        <div class="title-container">
+            <h1>Spanning the Gate</h1>
+            <h2>The Engineering Marvel That Changed America</h2>
+            <div class="anniversary">
+                <div class="date-badge">January 5, 2026</div>
+                <div class="years-badge">93 Years</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="intro-content">
+                <p class="intro-text">On January 5, 1933, in the midst of the Great Depression, workers began construction on what would become the world's most recognizable bridge. The Golden Gate Bridge wasn't just a bridge—it was a testament to human ingenuity, perseverance, and the American spirit.</p>
+                <div class="bridge-illustration">
+                    <div class="water"></div>
+                    <div class="bridge">
+                        <div class="tower left-tower"></div>
+                        <div class="span"></div>
+                        <div class="tower right-tower"></div>
+                        <div class="cable left-cable"></div>
+                        <div class="cable right-cable"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline-section">
+            <h2>The Bridge Through Time</h2>
+            <p>Follow the remarkable journey from dream to reality.</p>
+            
+            <div id="timeline">
+                <div class="timeline-track">
+                    <div class="timeline-line"></div>
+                    <div id="timeline-dots"></div>
+                </div>
+                <div id="event-content" class="event-content"></div>
+            </div>
+            
+            <div class="timeline-controls">
+                <button id="prev-event" aria-label="Previous event">←</button>
+                <span id="event-indicator">1 of 7</span>
+                <button id="next-event" aria-label="Next event">→</button>
+            </div>
+        </section>
+
+        <section id="human-stories">
+            <h2>The Human Element</h2>
+            
+            <div class="story-card">
+                <div class="story-profile joseph-strauss"></div>
+                <div class="story-content">
+                    <h3>Joseph Strauss: The Unlikely Visionary</h3>
+                    <p>"They said it couldn't be built. Too expensive, too dangerous, impossible given the conditions. But I knew better."</p>
+                    <p>Standing at just 5'3", Joseph Strauss was a giant in engineering. Originally proposing an ugly hybrid cantilever-suspension span to save money, he eventually embraced the elegant all-suspension design we know today. What many don't know: Strauss had never designed a suspension bridge before taking on the Golden Gate.</p>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-profile safety-net"></div>
+                <div class="story-content">
+                    <h3>The Halfway to Hell Club</h3>
+                    <p>19 men fell during construction. 19 men were saved by Strauss's innovation—a safety net suspended beneath the bridge.</p>
+                    <p>The men who survived falls called themselves the "Halfway to Hell Club." Strauss's insistence on the net—at a cost of $130,000 ($2.7 million today)—was revolutionary for worker safety. Tragically, near completion, the net failed when a scaffolding collapsed, taking 10 men with it in the worst accident in the project's history.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="facts-section">
+            <h2>Bridge by the Numbers</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-number">1.7</div>
+                    <div class="fact-unit">million</div>
+                    <div class="fact-desc">rivets used in each tower</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">80,000</div>
+                    <div class="fact-unit">miles</div>
+                    <div class="fact-desc">of wire in the main cables</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">$35</div>
+                    <div class="fact-unit">million</div>
+                    <div class="fact-desc">total cost ($557M today)</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">11</div>
+                    <div class="fact-unit">workers</div>
+                    <div class="fact-desc">lost their lives</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <div id="quiz-container">
+                <div id="quiz-question"></div>
+                <div id="quiz-options"></div>
+                <div id="quiz-feedback"></div>
+                <button id="quiz-next" disabled>Next Question</button>
+                <div id="quiz-progress">
+                    <span id="current-question">1</span> of <span id="total-questions">4</span>
+                </div>
+            </div>
+            <div id="quiz-results" class="hidden">
+                <h3>Quiz Complete!</h3>
+                <p>You scored: <span id="quiz-score">0</span> out of <span id="quiz-total">4</span></p>
+                <button id="quiz-restart">Try Again</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="commemoration">Commemorating 93 years since construction began: January 5, 1933</p>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

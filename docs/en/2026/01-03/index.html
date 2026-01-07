@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the drama of the Year of Four Emperors when Roman legions on the Rhine refused Galba and proclaimed Vitellius as emperor in 69 CE.">
+    <meta property="og:title" content="The Rhine Rebellion: When Legions Chose Their Emperor">
+    <meta property="og:description" content="Experience the pivotal moment in 69 CE when Roman legions rebelled against Emperor Galba and set off the Year of Four Emperors.">
+    <meta property="og:type" content="website">
+    <title>The Rhine Rebellion: When Legions Chose Their Emperor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        </nav>
+        <div class="header-content">
+            <div class="date-badge">
+                <div class="original-date">January 3, 69 CE</div>
+                <div class="anniversary">1957 years ago</div>
+            </div>
+            <h1>The Rhine Rebellion</h1>
+            <h2>When Roman Legions Chose Their Emperor</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <p class="lead">On January 3, 69 CE, Roman legions stationed along the Rhine River refused to pledge allegiance to Emperor Galba, instead proclaiming their commander Aulus Vitellius as emperor—triggering a civil war that would see four different men wear the imperial purple in a single year.</p>
+                <div class="scroll-hint">
+                    <p>Scroll to explore the story</p>
+                    <div class="arrow-down"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background">
+            <h3>The Stage is Set</h3>
+            <div class="column-layout">
+                <p>The year 68 CE had ended in chaos. Emperor Nero, the last of the Julio-Claudian dynasty, had committed suicide after being declared an enemy of the state by the Senate. Servius Sulpicius Galba, a 73-year-old aristocrat and governor of Hispania Tarraconensis (modern Spain), had seized power with the support of the Praetorian Guard.</p>
+                <p>But Galba was unpopular. He refused to pay the donative (bonus) promised to soldiers who supported him. He was seen as cruel and miserly. The legions that had supported him felt betrayed, and those that hadn't were looking for an opportunity.</p>
+            </div>
+            <div class="quote">
+                <blockquote>"The secret of empire was revealed: emperors could be made elsewhere than at Rome."</blockquote>
+                <cite>— Tacitus, Roman historian</cite>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <h3>The Year of Four Emperors</h3>
+            <p class="instruction">Click on each emperor to reveal their story in the dramatic year of 69 CE.</p>
+            <div id="emperors-container">
+                <div class="emperor-cards">
+                    <div class="emperor-card" data-emperor="galba">
+                        <div class="emperor-portrait galba"></div>
+                        <h4>Galba</h4>
+                    </div>
+                    <div class="emperor-card" data-emperor="otho">
+                        <div class="emperor-portrait otho"></div>
+                        <h4>Otho</h4>
+                    </div>
+                    <div class="emperor-card" data-emperor="vitellius">
+                        <div class="emperor-portrait vitellius"></div>
+                        <h4>Vitellius</h4>
+                    </div>
+                    <div class="emperor-card" data-emperor="vespasian">
+                        <div class="emperor-portrait vespasian"></div>
+                        <h4>Vespasian</h4>
+                    </div>
+                </div>
+                <div id="emperor-detail">
+                    <div id="emperor-content">
+                        <p class="select-prompt">Select an emperor above to learn their story</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rhine-legions">
+            <h3>The Rhine Legions: Kingmakers</h3>
+            <div class="column-layout">
+                <p>The legions stationed along the Rhine were among Rome's finest and most numerous. They defended the empire's frontier against Germanic tribes and were hardened by constant warfare. These soldiers weren't just fighting men—they were a political force.</p>
+                <p>When they refused to swear the oath of allegiance to Galba on January 3rd, it was a calculated move. Their commander, Aulus Vitellius, had only been appointed by Galba months earlier, but he was popular with the troops for his easygoing nature and generosity—the opposite of Galba's austerity.</p>
+            </div>
+            <div class="legion-info">
+                <div class="legion-item">
+                    <h4>Legio I Germanica</h4>
+                    <p>Stationed at Bonna (modern Bonn), this legion was among the first to revolt against Galba.</p>
+                </div>
+                <div class="legion-item">
+                    <h4>Legio V Alaudae</h4>
+                    <p>A legion raised by Julius Caesar himself, stationed at Vetera (near modern Xanten).</p>
+                </div>
+                <div class="legion-item">
+                    <h4>Legio XV Primigenia</h4>
+                    <p>Stationed at Vetera, this legion had a troubled history of rebellions.</p>
+                </div>
+                <div class="legion-item">
+                    <h4>Legio XVI Gallica</h4>
+                    <p>Stationed at Novaesium (modern Neuss), they strongly supported Vitellius.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="consequences">
+            <h3>The Aftermath: A Changed Empire</h3>
+            <div class="column-layout">
+                <p>The Rhine rebellion set in motion a devastating civil war. Within weeks, Galba would be murdered in the Roman Forum. The conflict would eventually end with Vespasian's victory and the establishment of the Flavian dynasty.</p>
+                <p>But beyond the immediate political consequences, the events of 69 CE changed how power worked in the Roman Empire. It demonstrated that armies—not just the Senate or the Praetorian Guard—could make emperors. No emperor after this could rule without maintaining the loyalty of provincial armies.</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h3>Test Your Knowledge</h3>
+            <div id="quiz-container">
+                <div id="question-container"></div>
+                <div id="options-container"></div>
+                <div id="result-container"></div>
+                <button id="next-button" style="display: none;">Next Question</button>
+                <div id="score-container" style="display: none;"></div>
+                <button id="restart-button" style="display: none;">Restart Quiz</button>
+            </div>
+        </section>
+
+        <section class="legacy">
+            <h3>Legacy: Why It Still Matters</h3>
+            <div class="column-layout">
+                <p>The events that began on January 3, 69 CE provide valuable insights into how power transitions can unravel. The Year of Four Emperors exposed the fragility of imperial succession without clear rules—a problem that would plague the Roman Empire for centuries.</p>
+                <p>This moment also demonstrates how military power can shape political outcomes. The Rhine legions' decision to back Vitellius—making an emperor of their own choosing—fundamentally changed the relationship between rulers and armies throughout history.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

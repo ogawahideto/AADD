@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the turbulent reign of Afonso IV of Portugal through an interactive timeline with a cyberpunk twist.">
+    <meta property="og:title" content="The Brave King: 700 Years of Afonso IV">
+    <meta property="og:description" content="Experience the dramatic story of Portugal's Afonso IV in this interactive digital commemoration.">
+    <meta property="og:type" content="website">
+    <title>The Brave King: 700 Years of Afonso IV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        <h1>The <span class="glitch" data-text="Brave">Brave</span> King</h1>
+        <h2>700 Years Since Afonso IV Claimed Portugal's Throne</h2>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="king-portrait">
+                <div class="king-silhouette"></div>
+                <div class="date-display">
+                    <div class="year">1325</div>
+                    <div class="date">January 7th</div>
+                </div>
+            </div>
+            <div class="intro-text">
+                <h3 class="neon-text">The Unexpected King</h3>
+                <p>When Afonso IV ascended to the throne of Portugal on January 7, 1325, few could have predicted the tumultuous reign ahead. Known as "<em>O Bravo</em>" (The Brave), he would face rebellion, family tragedy, and the looming threat of Castile.</p>
+                <p>Navigate the timeline below to discover the human story behind one of Portugal's most consequential monarchs.</p>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h3 class="section-title neon-text">Royal Timeline</h3>
+            <p class="instructions">Click on any event to reveal its story.</p>
+            <div class="timeline-container">
+                <div class="timeline-track" id="timeline-track">
+                    <!-- Timeline events will be inserted by JavaScript -->
+                </div>
+            </div>
+            <div class="event-details" id="event-details">
+                <h4 id="event-title">Select an event</h4>
+                <div id="event-content">
+                    <p>Click on a timeline event to learn more about Afonso IV's dramatic life and reign.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy-section">
+            <h3 class="section-title neon-text">The King's Legacy</h3>
+            <div class="legacy-cards">
+                <div class="card">
+                    <h4>The Father</h4>
+                    <p>Despite his conflict with his son Pedro, Afonso IV secured the royal succession. His grandson Fernando I would become the last king of the House of Burgundy.</p>
+                </div>
+                <div class="card">
+                    <h4>The Warrior</h4>
+                    <p>His victory at the Battle of Salado in 1340 helped push back the Moorish advance, contributing to the Christian reconquest of the Iberian Peninsula.</p>
+                </div>
+                <div class="card">
+                    <h4>The Ruler</h4>
+                    <p>Afonso strengthened Portugal's naval power and commercial ties, laying groundwork for the later Age of Discovery that would transform the nation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h3 class="section-title neon-text">Test Your Knowledge</h3>
+            <div class="quiz-container" id="quiz-container">
+                <div class="quiz-question active" id="quiz-start">
+                    <h4>How much do you know about Afonso IV?</h4>
+                    <p>Challenge yourself with this quick quiz about Portugal's Brave King.</p>
+                    <button id="start-quiz" class="glow-button">Start Quiz</button>
+                </div>
+                <!-- Quiz questions will be inserted by JavaScript -->
+                <div id="quiz-results" class="quiz-results">
+                    <h4>Quiz Complete!</h4>
+                    <p>You scored <span id="score">0</span> out of 3</p>
+                    <button id="restart-quiz" class="glow-button">Try Again</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="did-you-know">
+            <h3 class="section-title neon-text">Surprising Facts</h3>
+            <div class="fact-container">
+                <div class="fact">
+                    <h4><span class="icon">⚔️</span> Civil War with Father</h4>
+                    <p>Before becoming king, Afonso rebelled against his own father, King Dinis, leading to a brief civil war in Portugal that ended only months before he inherited the throne.</p>
+                </div>
+                <div class="fact">
+                    <h4><span class="icon">⚖️</span> The Inês de Castro Tragedy</h4>
+                    <p>Afonso IV ordered the execution of Inês de Castro, his son's lover, creating one of history's most famous love tragedies. After becoming king, his son Pedro had her body exhumed and crowned as queen postmortem.</p>
+                </div>
+                <div class="fact">
+                    <h4><span class="icon">🌊</span> The Explorer King</h4>
+                    <p>Though not known for exploration himself, Afonso IV funded early Atlantic expeditions to the Canary Islands in 1336, setting the stage for Portugal's later Age of Discovery.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

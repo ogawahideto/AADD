@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Celebrate Sir Isaac Newton's 383rd birthday with an interactive journey through his revolutionary scientific discoveries and legacy.">
+  <meta property="og:title" content="Gravity Glitch: Newton's Legacy">
+  <meta property="og:description" content="An interactive journey through Sir Isaac Newton's revolutionary scientific discoveries and lasting legacy.">
+  <meta property="og:type" content="website">
+  <title>Gravity Glitch: Newton's Legacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../index.html" class="back-link">← Back to All Apps</a>
+    </nav>
+    <div class="title-container">
+      <h1>GRAVITY<span class="glitch-effect">GLITCH</span></h1>
+      <h2>Newton's Legacy</h2>
+      <div class="countdown" id="countdown"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="hero">
+        <div class="newton-portrait">
+          <div class="portrait-inner"></div>
+        </div>
+        <div class="intro-text">
+          <h3>383 Years of Revolutionary Science</h3>
+          <p>On January 4, 2026, we commemorate the 383rd anniversary of Sir Isaac Newton's birth - the man who fundamentally changed our understanding of the universe.</p>
+          <p class="quote">"If I have seen further it is by standing on the shoulders of Giants."</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <h3>THE NEWTON TIMELINE</h3>
+      <p class="instruction">Drag the apple through time to explore Newton's life and discoveries</p>
+      <div class="timeline-container">
+        <div class="timeline-track" id="timeline-track">
+          <div class="timeline-marker" data-year="1642">
+            <div class="year">1642</div>
+            <div class="event-content">
+              <h4>A Christmas Miracle</h4>
+              <p>Born prematurely on Christmas Day in Woolsthorpe, England. So small that, as his mother later recalled, "he could have fit inside a quart mug." Few expected him to survive.</p>
+            </div>
+          </div>
+          <div class="timeline-marker" data-year="1665">
+            <div class="year">1665</div>
+            <div class="event-content">
+              <h4>The Plague Years</h4>
+              <p>When Cambridge University closed due to the Great Plague, Newton returned home and experienced his "annus mirabilis" (miracle year). In isolation, he developed calculus, optics theories, and began formulating his laws of motion.</p>
+            </div>
+          </div>
+          <div class="timeline-marker" data-year="1666">
+            <div class="year">1666</div>
+            <div class="event-content">
+              <h4>The Legendary Apple</h4>
+              <p>According to popular legend, Newton observed an apple falling from a tree, inspiring his work on gravity. While the apple likely never hit his head, this period did mark when he began connecting terrestrial gravity with celestial mechanics.</p>
+            </div>
+          </div>
+          <div class="timeline-marker" data-year="1687">
+            <div class="year">1687</div>
+            <div class="event-content">
+              <h4>Principia Published</h4>
+              <p>"Philosophiæ Naturalis Principia Mathematica" is published, establishing the three laws of motion and universal gravitation. It's considered one of the most important works in the history of science.</p>
+            </div>
+          </div>
+          <div class="timeline-marker" data-year="1704">
+            <div class="year">1704</div>
+            <div class="event-content">
+              <h4>Opticks</h4>
+              <p>Newton publishes "Opticks," revealing his groundbreaking work on the nature of light and color. He proved white light contains all colors of the spectrum, fundamentally changing our understanding of optics.</p>
+            </div>
+          </div>
+          <div class="timeline-marker" data-year="1727">
+            <div class="year">1727</div>
+            <div class="event-content">
+              <h4>Farewell to a Giant</h4>
+              <p>Newton dies at age 84. He was buried with full honors in Westminster Abbey. The French mathematician Alexis Clairaut eulogized: "Newton was the greatest genius who ever lived, and the most fortunate, for we cannot find more than once a system of the world to establish."</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-apple-container">
+          <div id="timeline-apple" class="timeline-apple"></div>
+        </div>
+        <div class="timeline-line"></div>
+      </div>
+    </section>
+
+    <section class="impact-section">
+      <h3>NEWTON'S IMPACT SIMULATION</h3>
+      <p>Explore how different masses and distances affect gravitational force</p>
+      <div class="gravity-simulator">
+        <div class="simulator-controls">
+          <div class="control-group">
+            <label for="mass1">Mass 1 (kg)</label>
+            <input type="range" id="mass1" min="1" max="100" value="50">
+            <span id="mass1-value">50</span>
+          </div>
+          <div class="control-group">
+            <label for="mass2">Mass 2 (kg)</label>
+            <input type="range" id="mass2" min="1" max="100" value="50">
+            <span id="mass2-value">50</span>
+          </div>
+          <div class="control-group">
+            <label for="distance">Distance (m)</label>
+            <input type="range" id="distance" min="1" max="20" value="10">
+            <span id="distance-value">10</span>
+          </div>
+          <div class="force-display">
+            <span>Gravitational Force:</span>
+            <span id="force-value">3.34E-7 N</span>
+          </div>
+        </div>
+        <div class="simulation-visual" id="simulation-visual">
+          <div class="planet planet1" id="planet1"></div>
+          <div class="planet planet2" id="planet2"></div>
+          <div class="force-line" id="force-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="legacy-section">
+      <h3>THE LASTING LEGACY</h3>
+      <div class="legacy-cards">
+        <div class="legacy-card">
+          <div class="card-icon">🚀</div>
+          <h4>Space Travel</h4>
+          <p>NASA uses Newton's laws to calculate spacecraft trajectories. The Apollo missions to the Moon relied on Newtonian physics.</p>
+        </div>
+        <div class="legacy-card">
+          <div class="card-icon">📱</div>
+          <h4>Modern Technology</h4>
+          <p>From smartphones to satellites, Newtonian mechanics underpins the engineering of countless modern technologies.</p>
+        </div>
+        <div class="legacy-card">
+          <div class="card-icon">🔬</div>
+          <h4>Scientific Method</h4>
+          <p>Newton's approach to hypothesis, experimentation, and mathematical proof revolutionized how science is conducted.</p>
+        </div>
+        <div class="legacy-card">
+          <div class="card-icon">📊</div>
+          <h4>Mathematics</h4>
+          <p>His co-invention of calculus gives us tools to understand change and is fundamental to modern engineering and physics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fun-facts">
+      <h3>NEWTON GLITCHES</h3>
+      <div class="facts-container" id="facts-container">
+        <div class="fact active">
+          <p>Newton once stuck a needle in his eye socket (between eye and bone) to see how it would affect his vision. This dangerous self-experimentation helped form his theories on optics.</p>
+        </div>
+        <div class="fact">
+          <p>Beyond science, Newton spent much of his later life studying alchemy and biblical prophecies. He wrote over a million words on these mystical topics—more than on science.</p>
+        </div>
+        <div class="fact">
+          <p>Newton was famously antagonistic. His bitter feud with German mathematician Gottfried Leibniz over who invented calculus first consumed years of his life.</p>
+        </div>
+        <div class="fact">
+          <p>Newton died a virgin and never married. He had very few close friends and was known for his temper and reclusiveness.</p>
+        </div>
+        <div class="fact">
+          <p>As Master of the Royal Mint, Newton personally pursued counterfeiters. He had several arrested and some were executed for their crimes.</p>
+        </div>
+      </div>
+      <div class="fact-navigation">
+        <button id="prev-fact" class="fact-btn">←</button>
+        <div class="fact-indicators" id="fact-indicators"></div>
+        <button id="next-fact" class="fact-btn">→</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

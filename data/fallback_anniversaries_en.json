@@ -13,6 +13,90 @@
       "category": "political"
     }
   ],
+  "01-02": [
+    {
+      "year": 1959,
+      "title": "Luna 1 becomes first spacecraft to reach escape velocity",
+      "description": "The Soviet Union's Luna 1 became the first spacecraft to reach Earth's escape velocity and the first to be placed in orbit around the Sun. This groundbreaking achievement marked a major milestone in space exploration and the Space Race.",
+      "category": "scientific"
+    },
+    {
+      "year": 1920,
+      "title": "Isaac Asimov born",
+      "description": "Isaac Asimov, one of the most prolific science fiction writers of all time, was born in Russia. His works, including the Foundation series and Robot series, profoundly influenced the genre and popularized the Three Laws of Robotics.",
+      "category": "cultural"
+    }
+  ],
+  "01-03": [
+    {
+      "year": 1961,
+      "title": "U.S. breaks diplomatic relations with Cuba",
+      "description": "The United States officially severed diplomatic relations with Cuba following Fidel Castro's revolution. This marked the beginning of decades of tension between the two nations and significantly influenced Cold War politics in the Western Hemisphere.",
+      "category": "political"
+    },
+    {
+      "year": 1892,
+      "title": "J.R.R. Tolkien born",
+      "description": "J.R.R. Tolkien, author of The Hobbit and The Lord of the Rings trilogy, was born in South Africa. His works revolutionized fantasy literature and created one of the most detailed and beloved fictional universes in literary history.",
+      "category": "cultural"
+    }
+  ],
+  "01-04": [
+    {
+      "year": 1643,
+      "title": "Isaac Newton born",
+      "description": "Sir Isaac Newton, one of the most influential scientists of all time, was born in England. His laws of motion and universal gravitation laid the foundation for classical mechanics and revolutionized our understanding of the physical world.",
+      "category": "scientific"
+    },
+    {
+      "year": 1958,
+      "title": "Sputnik 1 falls from orbit",
+      "description": "The Soviet satellite Sputnik 1, the first artificial Earth satellite, re-entered Earth's atmosphere and burned up after three months in orbit. Its successful launch had marked the beginning of the Space Age and accelerated the Space Race.",
+      "category": "scientific"
+    }
+  ],
+  "01-05": [
+    {
+      "year": 1933,
+      "title": "Golden Gate Bridge construction begins",
+      "description": "Construction began on the Golden Gate Bridge in San Francisco, California. When completed in 1937, it became an iconic symbol of American engineering achievement and one of the most photographed bridges in the world.",
+      "category": "historical"
+    },
+    {
+      "year": 1896,
+      "title": "First X-ray demonstration",
+      "description": "Wilhelm Röntgen demonstrated the use of X-rays for the first time at the University of Würzburg in Germany. This revolutionary discovery transformed medical diagnosis and earned Röntgen the first Nobel Prize in Physics in 1901.",
+      "category": "scientific"
+    }
+  ],
+  "01-06": [
+    {
+      "year": 1912,
+      "title": "New Mexico becomes 47th U.S. state",
+      "description": "New Mexico was admitted as the 47th state of the United States. The state's rich cultural heritage, combining Native American, Spanish, and Anglo influences, added significant diversity to the nation.",
+      "category": "political"
+    },
+    {
+      "year": 1838,
+      "title": "Samuel Morse demonstrates telegraph",
+      "description": "Samuel Morse and Alfred Vail demonstrated their telegraph system for the first time at the Speedwell Ironworks in New Jersey. This invention revolutionized long-distance communication and paved the way for the modern telecommunications era.",
+      "category": "scientific"
+    }
+  ],
+  "01-07": [
+    {
+      "year": 1610,
+      "title": "Galileo discovers three of Jupiter's moons",
+      "description": "Italian astronomer Galileo Galilei discovered three of Jupiter's four largest moons (Io, Europa, and Callisto) using his improved telescope. This groundbreaking observation provided strong evidence for the Copernican model of the solar system and revolutionized astronomy.",
+      "category": "scientific"
+    },
+    {
+      "year": 1927,
+      "title": "First transatlantic telephone service",
+      "description": "The first commercial transatlantic telephone service was established between New York and London, enabling direct voice communication across the Atlantic Ocean. This technological achievement revolutionized international communication and brought continents closer together.",
+      "category": "scientific"
+    }
+  ],
   "07-20": [
     {
       "year": 1969,

@@ -1,0 +1,23 @@
+{
+  "date": "2026-01-02",
+  "anniversary": {
+    "title": "Mercurius becomes Pope John II, the first pope to adopt a new name upon elevation to the papacy.[3]",
+    "description": "Mercurius becomes Pope John II, the first pope to adopt a new name upon elevation to the papacy.[3]",
+    "year": 533,
+    "category": "historical",
+    "source": "Wikipedia"
+  },
+  "app": {
+    "app_title": "What's in a Name? The First Papal Name Change",
+    "description": "An interactive exploration of how Mercurius became Pope John II and forever changed papal tradition",
+    "tags": [
+      "papal history",
+      "religion",
+      "interactive timeline",
+      "name traditions"
+    ],
+    "estimated_engagement": "3-6 minutes"
+  },
+  "generated_at": "2026-01-07T13:34:45.830938",
+  "generator_version": "1.0.0"
+}
