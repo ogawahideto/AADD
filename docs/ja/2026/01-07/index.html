@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日本文藝家協会設立100周年を記念し、文学界の変遷と歴史的意義を振り返るインタラクティブタイムライン">
+  <meta property="og:title" content="文学の守護者：日本文藝家協会100年の軌跡">
+  <meta property="og:description" content="1926年に誕生した日本文藝家協会の100年にわたる文学界への貢献と変遷を探る">
+  <meta property="og:type" content="website">
+  <title>文学の守護者：日本文藝家協会100年の軌跡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navigation">
+      <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
+    </div>
+    <div class="header-content">
+      <h1>文学の守護者</h1>
+      <h2>日本文藝家協会100年の軌跡</h2>
+      <div class="anniversary-badge">
+        <span class="year">1926</span>
+        <span class="divider">-</span>
+        <span class="year">2026</span>
+        <div class="years-label">100周年</div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="intro">
+    <div class="container">
+      <p class="lead">1926年1月7日、日本の文学界に歴史的な瞬間が訪れました。小説家協会と劇作家協会が合併し、「文藝家協会」（現・日本文藝家協会）が誕生したのです。この日から始まる100年の旅は、日本文学の保護と発展を担う重要な組織の物語です。</p>
+      
+      <div class="founders-gallery">
+        <div class="founder">
+          <div class="portrait" id="portrait-1"></div>
+          <p>菊池寛</p>
+        </div>
+        <div class="founder">
+          <div class="portrait" id="portrait-2"></div>
+          <p>芥川龍之介</p>
+        </div>
+        <div class="founder">
+          <div class="portrait" id="portrait-3"></div>
+          <p>久米正雄</p>
+        </div>
+      </div>
+      
+      <p>多くの文豪たちが設立に関わり、文学者の権利を守るという使命を帯びて誕生したこの協会は、時代の荒波をくぐり抜け、今日まで日本文学の守護者としての役割を果たしてきました。</p>
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <div class="container">
+      <h2>100年の軌跡</h2>
+      <p>タイムラインをクリックして、日本文藝家協会の歴史的瞬間を探索しましょう。</p>
+      
+      <div class="timeline-container">
+        <div class="timeline-navigation">
+          <button id="prev-event" aria-label="前のイベント">◀</button>
+          <div class="timeline">
+            <div class="timeline-track" id="timeline-track"></div>
+          </div>
+          <button id="next-event" aria-label="次のイベント">▶</button>
+        </div>
+        
+        <div class="event-container" id="event-container">
+          <!-- イベント内容はJavaScriptで動的に生成 -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="impact-section">
+    <div class="container">
+      <h2>文学者の権利を守る戦い</h2>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="icon">✍️</div>
+          <h3>著作権保護</h3>
+          <p>文藝家協会は著作権保護の最前線で戦い、作家が作品から正当な報酬を得られる環境を整えました。1931年の著作権法改正では中心的な役割を果たしています。</p>
+        </div>
+        <div class="impact-card">
+          <div class="icon">🏆</div>
+          <h3>文学賞の確立</h3>
+          <p>協会は芥川賞・直木賞をはじめとする数々の文学賞を設立・運営し、新人作家の発掘と文学の継承に貢献しました。</p>
+        </div>
+        <div class="impact-card">
+          <div class="icon">🔍</div>
+          <h3>検閲との戦い</h3>
+          <p>戦前・戦中の言論統制の時代、そして戦後の表現の自由を守るための闘争など、文学の自由を守る戦いの最前線に立ってきました。</p>
+        </div>
+        <div class="impact-card">
+          <div class="icon">🌐</div>
+          <h3>国際交流</h3>
+          <p>日本文学を世界に発信し、国際的な文学交流を推進。1960年代からは海外文学者との交流を積極的に展開しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="challenge-section">
+    <div class="container">
+      <h2>あなたはどれだけ知っている？</h2>
+      <div class="quiz-container" id="quiz-container">
+        <div class="quiz-intro" id="quiz-intro">
+          <p>日本文藝家協会と日本文学の歴史に関する3つの質問に挑戦してみましょう。</p>
+          <button id="start-quiz">クイズに挑戦する</button>
+        </div>
+        <div class="quiz-content" id="quiz-content">
+          <!-- クイズ内容はJavaScriptで動的に生成 -->
+        </div>
+        <div class="quiz-result" id="quiz-result">
+          <!-- 結果はJavaScriptで動的に生成 -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="future-section">
+    <div class="container">
+      <h2>次の100年へ：デジタル時代の文学</h2>
+      <div class="future-content">
+        <p>設立から100年、文藝家協会は今、新たな課題に直面しています。AI創作、電子書籍の権利問題、そして変化し続けるメディア環境の中で、作家の権利と文学の価値をどう守っていくか。</p>
+        <p>歴代の作家たちが守り抜いてきた「言葉の力」と「表現の自由」という遺産は、これからの100年も日本の文化の礎として輝き続けるでしょう。</p>
+        <div class="quote">
+          <blockquote>
+            「文学は時代を映す鏡であると同時に、未来を照らす灯火でもある」
+          </blockquote>
+          <p class="quote-author">— 現日本文藝家協会会長</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+      <p>実際の歴史的詳細については、日本文藝家協会の公式資料や信頼できる歴史的文献を参照してください。</p>
+    </div>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
