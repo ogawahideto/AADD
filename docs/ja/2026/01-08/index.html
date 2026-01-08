@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="1985年1月8日に打ち上げられた日本初の惑星探査機「さきがけ」の物語。ハレー彗星への挑戦と宇宙開発の歴史を振り返る。">
+  <meta property="og:title" content="「さきがけ」- 日本初の惑星間飛行への挑戦">
+  <meta property="og:description" content="41年前、日本は宇宙への新たな一歩を踏み出しました。ハレー彗星探査機「さきがけ」の物語をインタラクティブに体験してください。">
+  <meta property="og:type" content="website">
+  <title>「さきがけ」- 日本初の惑星間飛行への挑戦</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
+    </nav>
+    <div class="title-container">
+      <h1>「さきがけ」<span class="subtitle">日本初の惑星間飛行への挑戦</span></h1>
+      <p class="anniversary">1985年1月8日 - 打ち上げから<span class="years">41</span>年</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="spacecraft-animation">
+        <div class="spacecraft">
+          <div class="body"></div>
+          <div class="panel left"></div>
+          <div class="panel right"></div>
+          <div class="antenna"></div>
+        </div>
+        <div class="stars"></div>
+        <div class="comet"></div>
+      </div>
+      <blockquote>
+        「我々は未知の宇宙へ挑むための先駆者となる。これは日本の宇宙科学にとって小さな一歩かもしれないが、人類の宇宙探査にとっては大きな飛躍となるだろう。」
+        <cite>— 西田篤弘 教授（「さきがけ」計画主任研究者）</cite>
+      </blockquote>
+    </section>
+
+    <section class="story">
+      <h2>歴史を変えた瞬間</h2>
+      <p class="lead">1985年1月8日、鹿児島県の内之浦宇宙空間観測所から日本初の惑星探査機「さきがけ」が打ち上げられました。これは日本が初めて地球の重力圏を脱出し、太陽を周回する人工惑星を実現した歴史的な出来事でした。</p>
+      
+      <div class="timeline-container">
+        <div class="timeline-control">
+          <button id="prev-event" aria-label="前のイベント">◀</button>
+          <div class="timeline-progress">
+            <div class="progress-bar"></div>
+          </div>
+          <button id="next-event" aria-label="次のイベント">▶</button>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="timeline-event" data-event="1">
+            <h3>1950年代 - 宇宙への憧れ</h3>
+            <p>スプートニクショックから始まった宇宙開発競争。日本も宇宙研究をスタートさせますが、当時は小型ロケットの研究が中心でした。惑星間飛行は夢の領域でした。</p>
+          </div>
+          <div class="timeline-event" data-event="2">
+            <h3>1981年 - 計画の始まり</h3>
+            <p>76年ぶりに地球に接近するハレー彗星。この天体観測の千載一遇のチャンスに、日本も挑戦しようと「MS-T5」計画（後の「さきがけ」）が始動します。欧州のジオット、ソ連のベガに比べて予算は10分の1以下という厳しい船出でした。</p>
+          </div>
+          <div class="timeline-event" data-event="3">
+            <h3>1985年1月8日 - 打ち上げの日</h3>
+            <p>M-3SII-1ロケットに搭載された「さきがけ」は、重量わずか138kg。当時の世界最軽量の惑星探査機でした。小さいながらも8つの観測機器を搭載し、打ち上げは完璧に成功しました。</p>
+          </div>
+          <div class="timeline-event" data-event="4">
+            <h3>1985年3月 - 地球脱出</h3>
+            <p>「さきがけ」は地球の重力圏から脱出し、日本初の人工惑星となりました。これにより日本は米国、ソ連、欧州に次いで世界で4番目に惑星間飛行を成功させた国となったのです。</p>
+          </div>
+          <div class="timeline-event" data-event="5">
+            <h3>1986年3月 - ハレー彗星接近</h3>
+            <p>「さきがけ」はハレー彗星から約700万km離れた地点で観測を行いました。「すいせい」と共に彗星の太陽風との相互作用データを取得。国際ハレー彗星ウォッチの一員として貴重なデータを提供しました。</p>
+          </div>
+          <div class="timeline-event" data-event="6">
+            <h3>現在 - 太陽を周回</h3>
+            <p>「さきがけ」は今も太陽を周回し続けています。通信は1995年に途絶えましたが、日本の宇宙開発の「さきがけ」として、その軌跡は永遠に宇宙に刻まれています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts">
+      <h2>知られざる「さきがけ」の物語</h2>
+      <div class="fact-grid">
+        <div class="fact-card">
+          <h3>挑戦者たち</h3>
+          <p>「さきがけ」開発チームの平均年齢は35歳。若い研究者たちが大国の巨大プロジェクトに挑む「ダビデとゴリアテ」の戦いでした。</p>
+        </div>
+        <div class="fact-card">
+          <h3>名前の由来</h3>
+          <p>「さきがけ」という名前には「惑星間空間の先駆者」という意味が込められていました。英語では「Pioneer」と訳されます。</p>
+        </div>
+        <div class="fact-card">
+          <h3>技術的制約</h3>
+          <p>重量制限が厳しかったため、「さきがけ」にはカメラが搭載されていません。これは科学者たちにとって苦渋の決断でした。</p>
+        </div>
+        <div class="fact-card">
+          <h3>双子の探査機</h3>
+          <p>「さきがけ」の2か月後に「すいせい」が打ち上げられました。2機の探査機が異なる角度から観測することで、より詳細なデータが得られました。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact">
+      <h2>「さきがけ」の遺産</h2>
+      <p>この小さな探査機は日本の宇宙開発に大きな足跡を残しました。「さきがけ」以降、日本は「ひてん」「のぞみ」「はやぶさ」と惑星探査技術を発展させ、世界をリードする宇宙探査国へと成長しました。</p>
+      
+      <div class="quote-container">
+        <blockquote class="impact-quote">
+          「さきがけ」は技術的挑戦だけでなく、日本の宇宙開発の哲学を示しました。小型で効率的、そして大胆な発想で世界と競う—これは今日の日本の宇宙開発にも引き継がれている精神です。
+          <cite>— 的川泰宣（JAXA名誉教授）</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h2>「さきがけ」クイズ</h2>
+      <p>あなたは「さきがけ」についてどれだけ知っていますか？</p>
+      
+      <div class="quiz-container">
+        <div id="quiz-display">
+          <div id="question-container">
+            <p id="question">準備はいいですか？</p>
+          </div>
+          <div id="options-container">
+            <button class="quiz-start-btn">クイズを始める</button>
+          </div>
+        </div>
+        <div id="result-container" class="hidden">
+          <p id="result-message"></p>
+          <button id="restart-btn">もう一度挑戦</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+      <p>写真・イラストはCSSで作成されたものです。実際の画像とは異なります。</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
