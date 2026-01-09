@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-09",
+  "anniversary": {
+    "title": "東京・両国に新国技館が落成。",
+    "description": "東京・両国に新国技館が落成。",
+    "year": 1985,
+    "category": "historical",
+    "source": "Wikipedia (ja)"
+  },
+  "app": {
+    "app_title": "土俵の聖殿：新国技館の41年",
+    "description": "1985年1月9日、東京・両国に落成した新国技館の歴史を没入型タイムラインで辿る旅",
+    "tags": [
+      "相撲",
+      "国技館",
+      "日本文化",
+      "歴史",
+      "建築"
+    ],
+    "estimated_engagement": "3-5分"
+  },
+  "generated_at": "2026-01-09T09:02:00.648778",
+  "generator_version": "1.0.0"
+}
