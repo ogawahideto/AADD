@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="日劇ダンシングチーム(NDT)の90周年を祝う。伝説的な日本のダンスグループの栄光の歴史と文化的影響を探る。">
+    <meta property="og:title" content="華麗なる舞台：日劇ダンシングチーム90年の軌跡">
+    <meta property="og:description" content="戦前から戦後の日本を彩った伝説的ダンスカンパニーの物語">
+    <meta property="og:type" content="website">
+    <title>華麗なる舞台：日劇ダンシングチーム90年の軌跡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>華麗なる舞台</h1>
+            <h2>日劇ダンシングチーム 90周年</h2>
+            <p class="lead">1936年1月13日 - 2026年1月13日</p>
+            <div class="hero-cta">
+                <button id="start-journey" class="btn-primary">時代を超える旅へ</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="section">
+            <div class="container">
+                <h2 class="section-title">伝説の始まり</h2>
+                <div class="content-split">
+                    <div class="text-content">
+                        <p>1936年1月13日、東京・有楽町の日本劇場で一組の若い女性たちが舞台に立った。彼女たちは「日劇ダンシングチーム」（NDT）と呼ばれ、その日の公演は日本のエンターテインメント史に新たな1ページを開くことになった。</p>
+                        <p>厳しいオーディションを勝ち抜いた16人の初期メンバーは、当時としては革新的なダンスパフォーマンスを披露。彼女たちの優雅で統一された動きは、日本のエンターテインメントシーンに新風を吹き込んだ。</p>
+                        <p>「ニューヨーク・ラジオシティ・ミュージックホール」を模範としたNDTは、日本の西洋式ダンスエンターテインメントの先駆けとなった。</p>
+                    </div>
+                    <div class="visual-content">
+                        <div class="fact-box">
+                            <h3>意外な事実</h3>
+                            <p>初期メンバーの平均年齢はわずか17歳。最年少のダンサーは15歳だった。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline-section" class="section dark">
+            <div class="container">
+                <h2 class="section-title">90年の軌跡</h2>
+                <p class="section-intro">NDTの歴史をたどる時間の旅へご案内します。各年代の重要な出来事をクリックして詳細を確認できます。</p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-controls">
+                        <button id="prev-era" class="era-btn">◀</button>
+                        <h3 id="current-era">1930年代</h3>
+                        <button id="next-era" class="era-btn">▶</button>
+                    </div>
+                    <div id="timeline" class="timeline">
+                        <!-- タイムラインはJavaScriptで動的に生成されます -->
+                    </div>
+                    <div id="event-details" class="event-details">
+                        <div id="event-content">
+                            <h3>イベントを選択してください</h3>
+                            <p>タイムライン上のイベントをクリックすると、詳細がここに表示されます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="legacy" class="section">
+            <div class="container">
+                <h2 class="section-title">文化的遺産</h2>
+                <div class="content-split reverse">
+                    <div class="text-content">
+                        <p>NDTは単なるダンスグループではなく、日本の近代化と西洋文化の融合を体現する存在だった。戦前・戦中・戦後と時代を越えて活動を続け、日本のエンターテインメント産業の基盤を築いた。</p>
+                        <p>彼女たちが確立した精密なラインダンス、厳格な訓練方法、そして「一糸乱れぬ」調和のとれた美学は、その後の日本のダンスグループやアイドルグループの原型となった。</p>
+                        <p>NDTの元ダンサーたちは、後に振付師、舞踊学校の指導者、エンターテインメント業界のプロデューサーとして活躍。彼女たちが播いた種は、現代の日本のエンターテインメント文化に花開いている。</p>
+                    </div>
+                    <div class="visual-content">
+                        <div class="impact-box">
+                            <h3>NDTが現代に残した影響</h3>
+                            <ul>
+                                <li>精密な群舞の伝統</li>
+                                <li>舞台照明技術の発展</li>
+                                <li>ダンサー育成システム</li>
+                                <li>女性エンターテイナーの地位向上</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stories" class="section dark">
+            <div class="container">
+                <h2 class="section-title">舞台の裏側</h2>
+                <div class="story-cards">
+                    <div class="story-card">
+                        <h3>厳しい選抜と訓練</h3>
+                        <p>NDTに入るには何百人もの応募者から選ばれる必要があった。選ばれた後も毎日6時間以上の猛練習。身長制限は163cm±3cmと厳格で、体重も毎週チェックされていた。</p>
+                    </div>
+                    <div class="story-card">
+                        <h3>戦時中の活動</h3>
+                        <p>第二次世界大戦中も公演を続けたNDT。空襲警報が鳴る中でも、観客を励ますために踊り続けた記録が残されている。「笑顔で踊り続けることが私たちの使命」というモットーを貫いた。</p>
+                    </div>
+                    <div class="story-card">
+                        <h3>憧れの職業</h3>
+                        <p>戦後の混乱期、NDTのダンサーは多くの若い女性の憧れだった。月給は一般的なOLの2〜3倍。しかし、その華やかな舞台の裏には、舞台化粧の下に隠された靴擦れや筋肉痛との闘いがあった。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="section">
+            <div class="container">
+                <h2 class="section-title">その精神は受け継がれて</h2>
+                <div class="quote-container">
+                    <blockquote>
+                        <p>「私たちが目指したのは、完璧な統一感だけじゃない。一人一人が輝きながら、全体として調和する美しさ。それは日本文化そのものを表現していたのかもしれない。」</p>
+                        <cite>— 村田雪子（NDT元ダンサー、1953-1967）</cite>
+                    </blockquote>
+                </div>
+                <p class="closing-text">日劇ダンシングチームは1996年に60年の歴史に幕を閉じたが、彼女たちが築いた「集団の美学」は、現代の日本のパフォーミングアーツの中に確かに生き続けている。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+            <p>写真や詳細な歴史資料については、国立国会図書館デジタルコレクションや日本の舞台芸術アーカイブなどの公式情報源を参照してください。</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive experience commemorating Pope Eugene IV's 1435 Sicut Dudum papal bull against enslaving native Guanches in the Canary Islands">
+    <meta property="og:title" content="Sicut Dudum: The Forgotten Decree Against Slavery">
+    <meta property="og:description" content="Explore the little-known 15th century papal decree that stood against the enslavement of native peoples in the Canary Islands.">
+    <meta property="og:type" content="website">
+    <title>Sicut Dudum: The Forgotten Decree Against Slavery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← Back to All Apps</a>
+        </nav>
+        <div class="title-container">
+            <h1>Sicut Dudum</h1>
+            <h2>The Forgotten Decree Against Slavery</h2>
+            <div class="anniversary">591 Years • January 13, 1435</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="paper-container">
+                <div class="seal"></div>
+                <div class="scroll-content">
+                    <h3>What was Sicut Dudum?</h3>
+                    <p>On January 13, 1435, Pope Eugene IV issued a papal bull called "Sicut Dudum" that explicitly condemned and prohibited the enslavement of the Guanche people, native inhabitants of the Canary Islands, particularly those who had converted or were converting to Christianity.</p>
+                    <p>This largely forgotten decree came decades before Europeans would begin widespread colonization of the Americas, representing one of the earliest official Church positions against indigenous enslavement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historical-context">
+            <h3>Historical Context</h3>
+            <div class="timeline-container">
+                <div id="timelineControls">
+                    <button id="prevEvent">◀</button>
+                    <div id="timeline"></div>
+                    <button id="nextEvent">▶</button>
+                </div>
+                <div id="timelineContent">
+                    <div class="event-details">
+                        <h4 id="eventTitle">Select an event on the timeline</h4>
+                        <div id="eventDescription">Navigate through key events using the timeline above.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="human-stories">
+            <h3>The Human Cost</h3>
+            <div class="story-container">
+                <div class="quote">
+                    <p>"These people are living in freedom in their own homeland. By what right do you make them slaves?"</p>
+                    <cite>— Attributed to Canarian defenders questioning Spanish captors</cite>
+                </div>
+                <div class="story">
+                    <p>The Guanche people had inhabited the Canary Islands for over a thousand years before European arrival. They lived in cave dwellings and stone houses, developed agricultural systems, and had their own religious practices.</p>
+                    <p>When European explorers reached the islands in the early 1400s, they began capturing Guanches to sell as slaves in European markets. Families were torn apart. Countless people were forcibly removed from their homeland. The population was devastated not only by warfare but by diseases brought by Europeans.</p>
+                    <p>The islands became a testing ground for colonial practices that would later be implemented across the Americas, making Sicut Dudum's prohibition all the more significant.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="significance">
+            <h3>Why This Matters Today</h3>
+            <div class="points-container">
+                <div class="point">
+                    <h4>Early Recognition</h4>
+                    <p>Sicut Dudum came 58 years before Columbus's voyage to the Americas and stands as one of the earliest European official recognitions of indigenous rights.</p>
+                </div>
+                <div class="point">
+                    <h4>Limited Impact</h4>
+                    <p>Despite the decree, slavery and conquest continued. The gap between proclamation and practice reveals how economic interests often trumped moral and religious considerations.</p>
+                </div>
+                <div class="point">
+                    <h4>Forgotten History</h4>
+                    <p>The fact that this decree is rarely discussed in history classes highlights how selective our historical memory can be, often overlooking early attempts to resist injustice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="decree-exploration">
+            <h3>Explore the Decree</h3>
+            <div class="decree-container">
+                <div class="decree-text">
+                    <div id="decreeFacts">
+                        <div class="decree-navigation">
+                            <button id="prevFact">◀</button>
+                            <span id="factCounter">1/5</span>
+                            <button id="nextFact">▶</button>
+                        </div>
+                        <div class="fact-container">
+                            <p id="currentFact">Loading facts...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy">
+            <h3>The Legacy</h3>
+            <div class="legacy-content">
+                <p>Today, the Guanche culture has been largely lost, though genetic studies show that modern Canarians carry substantial Guanche ancestry. The islands themselves became a crucial stopping point for Spanish ships heading to the Americas, directly connecting the fate of the Canary Islands to the larger story of colonization.</p>
+                <p>Sicut Dudum represents a road not taken—a moment when European powers had the opportunity to establish different relationships with indigenous peoples they encountered. Its limited enforcement foreshadowed the contradictions that would characterize European colonization for centuries to come.</p>
+                <p>As we commemorate the 591st anniversary of this decree, we're reminded that history is rarely a straight line of progress, but rather a complex web of competing voices, interests, and possibilities.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-13",
+  "anniversary": {
+    "title": "Sicut Dudum, forbidding the enslavement by the Spanish of the Guanche natives in Canary Islands who ...",
+    "description": "Sicut Dudum, forbidding the enslavement by the Spanish of the Guanche natives in Canary Islands who had converted, or were converting to, Christianity, is promulgated by Pope Eugene IV.",
+    "year": 1435,
+    "category": "historical",
+    "source": "Wikipedia"
+  },
+  "app": {
+    "app_title": "Sicut Dudum: The Forgotten Decree Against Slavery",
+    "description": "An interactive exploration of Pope Eugene IV's 1435 papal bull condemning the enslavement of Canary Islands natives",
+    "tags": [
+      "historical",
+      "human rights",
+      "colonization",
+      "indigenous",
+      "papal decree"
+    ],
+    "estimated_engagement": "3-6 minutes"
+  },
+  "generated_at": "2026-01-13T09:03:50.170644",
+  "generator_version": "1.0.0"
+}

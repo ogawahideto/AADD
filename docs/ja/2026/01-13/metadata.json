@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-13",
+  "anniversary": {
+    "title": "日劇ダンシングチーム (NDT) が初公演。",
+    "description": "日劇ダンシングチーム (NDT) が初公演。",
+    "year": 1936,
+    "category": "historical",
+    "source": "Wikipedia (ja)"
+  },
+  "app": {
+    "app_title": "華麗なる舞台：日劇ダンシングチーム90年の軌跡",
+    "description": "1936年に初公演した伝説的ダンスカンパニー「日劇ダンシングチーム」の90周年を祝うインタラクティブなタイムライン体験",
+    "tags": [
+      "日本文化",
+      "舞台芸術",
+      "戦前・戦後",
+      "エンターテイメント史",
+      "女性史"
+    ],
+    "estimated_engagement": "3-5分"
+  },
+  "generated_at": "2026-01-13T09:02:17.656792",
+  "generator_version": "1.0.0"
+}
