@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-14",
+  "anniversary": {
+    "title": "南極大陸で1年間置き去りにされたカラフト犬タロとジロの生存が確認される[4]。",
+    "description": "南極大陸で1年間置き去りにされたカラフト犬タロとジロの生存が確認される[4]。",
+    "year": 1959,
+    "category": "historical",
+    "source": "Wikipedia (ja)"
+  },
+  "app": {
+    "app_title": "生存の奇跡：タロとジロの南極物語",
+    "description": "極寒の南極で1年間生き延びた2匹の犬の信じられない冒険を体験する",
+    "tags": [
+      "歴史",
+      "南極",
+      "生存",
+      "動物",
+      "冒険"
+    ],
+    "estimated_engagement": "3-5分"
+  },
+  "generated_at": "2026-01-14T09:02:08.255830",
+  "generator_version": "1.0.0"
+}

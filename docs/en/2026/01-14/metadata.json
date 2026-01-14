@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-14",
+  "anniversary": {
+    "title": "King Henry III of England marries Eleanor of Provence.[1]",
+    "description": "King Henry III of England marries Eleanor of Provence.[1]",
+    "year": 1236,
+    "category": "political",
+    "source": "Wikipedia"
+  },
+  "app": {
+    "app_title": "Royal Bonds: The Medieval Marriage that Shaped England",
+    "description": "Explore how the 1236 marriage of King Henry III and Eleanor of Provence transformed English culture and royal traditions.",
+    "tags": [
+      "medieval",
+      "history",
+      "royal",
+      "interactive",
+      "England"
+    ],
+    "estimated_engagement": "3-5 minutes"
+  },
+  "generated_at": "2026-01-14T09:04:17.747464",
+  "generator_version": "1.0.0"
+}
