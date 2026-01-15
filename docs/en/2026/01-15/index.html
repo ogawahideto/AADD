@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the dramatic coronation of Elizabeth I and discover how this pivotal moment shaped England's Golden Age through interactive timelines and surprising historical facts.">
+    <meta property="og:title" content="Crown & Country: Elizabeth I's Coronation">
+    <meta property="og:description" content="Interactive journey through Elizabeth I's coronation and the beginning of England's Golden Age">
+    <meta property="og:type" content="website">
+    <title>Crown & Country: Elizabeth I's Coronation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../../index.html" class="back-link">← Back to All Apps</a>
+    
+    <header>
+        <div class="header-content">
+            <h1>Crown & Country</h1>
+            <h2>The Coronation of Elizabeth I</h2>
+            <p class="date">January 15, 1559</p>
+            <div class="anniversary">467 Years Ago</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="dramatic-intro">A 25-year-old woman walks through London's icy streets toward Westminster Abbey. The crowd roars. Few expect this "weak and feeble woman" to survive a year on the throne, let alone transform a nation.</p>
+            
+            <div class="quote-container">
+                <blockquote>
+                    "This is the Lord's doing, and it is marvelous in our eyes."
+                    <cite>— Elizabeth I, words chosen for her coronation medal</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="coronation-story">
+            <h2>The Unlikely Queen</h2>
+            <div class="story-flex">
+                <div class="text-column">
+                    <p>Elizabeth Tudor was never supposed to be queen. Born to Henry VIII and Anne Boleyn, she was declared illegitimate after her mother's execution when she was just two years old.</p>
+                    <p>By 1559, England had endured religious turmoil, economic crisis, and the loss of its last continental territory. The previous monarch, Mary I, had burned hundreds of Protestants at the stake, earning the nickname "Bloody Mary."</p>
+                    <p>When Elizabeth inherited the crown, England was:</p>
+                    <ul>
+                        <li>Nearly bankrupt from failed wars</li>
+                        <li>Torn apart by religious conflict</li>
+                        <li>Vulnerable to invasion by France and Spain</li>
+                        <li>Suffering from failed harvests and inflation</li>
+                    </ul>
+                    <p>Few believed a woman could rule effectively. Elizabeth would prove them wrong.</p>
+                </div>
+                <div class="portrait-container">
+                    <div class="portrait">
+                        <div class="portrait-inner"></div>
+                    </div>
+                    <p class="caption">Elizabeth's coronation portrait (stylized representation)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coronation-day">
+            <h2>The Coronation: January 15, 1559</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-navigation">
+                    <button id="prev-event" aria-label="Previous event">◀</button>
+                    <div id="timeline-title">The Day's Events</div>
+                    <button id="next-event" aria-label="Next event">▶</button>
+                </div>
+                
+                <div class="timeline-content">
+                    <div class="timeline-event" id="event-1">
+                        <h3>The Procession</h3>
+                        <p>Elizabeth rode through London streets lined with cheering crowds. The road was covered in gravel and blue cloth. People threw flowers and coins, shouting blessings.</p>
+                        <div class="timeline-fact">Unlike previous monarchs who kept distant, Elizabeth stopped repeatedly to thank the common people, establishing her image as "the people's queen."</div>
+                    </div>
+                    
+                    <div class="timeline-event hidden" id="event-2">
+                        <h3>The Recognition</h3>
+                        <p>Inside Westminster Abbey, Elizabeth was presented to the people in all four directions, with the crowd shouting "Yea, yea!" to acknowledge her as rightful queen.</p>
+                        <div class="timeline-fact">The ceremony was conducted partly in English rather than Latin—a bold statement about religious reform that Elizabeth was carefully planning.</div>
+                    </div>
+                    
+                    <div class="timeline-event hidden" id="event-3">
+                        <h3>The Anointing</h3>
+                        <p>The most sacred part of the ceremony: Elizabeth was anointed with holy oil on her hands, breast, and forehead, symbolizing her divine appointment.</p>
+                        <div class="timeline-fact">Elizabeth insisted on being anointed as kings were, with the same sacred oil, breaking with tradition for female monarchs.</div>
+                    </div>
+                    
+                    <div class="timeline-event hidden" id="event-4">
+                        <h3>The Crowning</h3>
+                        <p>The Archbishop placed St. Edward's Crown on Elizabeth's head. Trumpets blared, and the peers of England put on their coronets in unison.</p>
+                        <div class="timeline-fact">The heavy crown was so uncomfortable that Elizabeth later joked she needed to stop the ceremony to let her neck rest!</div>
+                    </div>
+                    
+                    <div class="timeline-event hidden" id="event-5">
+                        <h3>The Banquet</h3>
+                        <p>A lavish feast followed at Westminster Hall, with Elizabeth seated beneath a canopy of estate. The champion of England rode into the hall and threw down his gauntlet, challenging anyone who denied Elizabeth's right to rule.</p>
+                        <div class="timeline-fact">The banquet was so expensive it nearly bankrupted the already struggling treasury, but Elizabeth knew the importance of spectacle in securing her position.</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-progress">
+                    <span class="timeline-dot active" data-event="1"></span>
+                    <span class="timeline-dot" data-event="2"></span>
+                    <span class="timeline-dot" data-event="3"></span>
+                    <span class="timeline-dot" data-event="4"></span>
+                    <span class="timeline-dot" data-event="5"></span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="surprising-facts">
+            <h2>Five Things You Never Knew About Elizabeth's Coronation</h2>
+            
+            <div class="fact-cards">
+                <div class="fact-card">
+                    <h3>1. The Missing Bishop</h3>
+                    <p>All but one of England's bishops refused to crown Elizabeth because they were loyal Catholics. The Bishop of Carlisle finally agreed, but couldn't perform the full ceremony due to his lower rank.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>2. The Secret Protestant</h3>
+                    <p>During the ceremony, Elizabeth quietly whispered to her ladies that the communion bread and wine were just symbols, revealing her Protestant leanings even as she outwardly followed Catholic rituals.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>3. The Married Queen?</h3>
+                    <p>Elizabeth received a wedding ring during her coronation and referred to England as her husband, beginning her lifelong claim to be "married to the realm" rather than any mortal man.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>4. The Royal Scent</h3>
+                    <p>The streets were fumigated with perfumes and incense for Elizabeth's procession—not just for ceremony but to combat the notorious stench of Tudor London.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>5. The Tudor Superstition</h3>
+                    <p>Elizabeth scheduled her coronation based on astrological calculations for the most favorable date. Her father Henry VIII had done the same, as the Tudors were deeply superstitious.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy">
+            <h2>What Happened Next: The Golden Age</h2>
+            <div class="legacy-container">
+                <div class="before-after">
+                    <div class="before">
+                        <h3>When Elizabeth Was Crowned:</h3>
+                        <ul>
+                            <li>England was bankrupt and militarily weak</li>
+                            <li>Religious persecution was tearing society apart</li>
+                            <li>The country was seen as a minor power</li>
+                            <li>Women were considered unfit to rule</li>
+                        </ul>
+                    </div>
+                    <div class="after">
+                        <h3>By The End Of Her Reign:</h3>
+                        <ul>
+                            <li>England had defeated the Spanish Armada</li>
+                            <li>Trade and exploration expanded globally</li>
+                            <li>Religious tensions were managed by compromise</li>
+                            <li>Shakespeare, Marlowe and the arts flourished</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="reign-stats">
+                    <div class="stat">
+                        <div class="number">44</div>
+                        <div class="label">Years on throne</div>
+                    </div>
+                    <div class="stat">
+                        <div class="number">13</div>
+                        <div class="label">Marriage proposals</div>
+                    </div>
+                    <div class="stat">
+                        <div class="number">0</div>
+                        <div class="label">Husbands</div>
+                    </div>
+                </div>
+                
+                <blockquote class="final-quote">
+                    "I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and a king of England too."
+                    <cite>— Elizabeth I, Speech to the Troops at Tilbury, 1588</cite>
+                </blockquote>
+            </div>
+        </section>
+        
+        <section class="quiz-section">
+            <h2>Test Your Tudor Knowledge</h2>
+            <div id="quiz-container">
+                <div id="question-container">
+                    <p id="question-text">Question text appears here</p>
+                    <div id="options-container"></div>
+                </div>
+                <div id="result-container" class="hidden">
+                    <p id="result-text"></p>
+                    <p id="explanation-text"></p>
+                </div>
+                <div id="quiz-navigation">
+                    <button id="next-question" disabled>Next Question</button>
+                    <div id="quiz-progress">Question <span id="current-question">1</span> of <span id="total-questions">4</span></div>
+                </div>
+                <div id="final-results" class="hidden">
+                    <h3>Quiz Complete!</h3>
+                    <p>You scored: <span id="final-score">0</span> out of <span id="max-score">4</span></p>
+                    <button id="restart-quiz">Try Again</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generated by AI (Claude) for educational purposes. All content is for informational use only.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="日本初の公立小学校、東京師範学校附属小学校の設立153周年を記念する没入型タイムライン体験">
+    <meta property="og:title" content="学びの扉 - 日本の近代教育153年の軌跡">
+    <meta property="og:description" content="明治初期から始まった日本の公教育の歴史を振り返る没入型体験">
+    <meta property="og:type" content="website">
+    <title>学びの扉 - 日本の近代教育153年の軌跡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="back-link">← 全アプリ一覧に戻る</a>
+        </nav>
+        <h1>学びの扉</h1>
+        <h2>日本の近代教育153年の軌跡</h2>
+        <p class="anniversary-date"><span>1873年1月15日</span>から<span>153年</span></p>
+    </header>
+
+    <section class="intro">
+        <div class="intro-content">
+            <h3>明治維新の教育改革</h3>
+            <p>1873年1月15日（明治5年12月18日）、東京・湯島の地に日本初の学制に基づく小学校が誕生しました。東京師範学校附属小学校（現・筑波大学附属小学校）の設立は、単なる学校の開校ではなく、日本の教育史における革命的な転換点でした。</p>
+            <p>封建制度から近代国家へと急速に変貌を遂げる明治日本で、新しい教育の実験場として生まれたこの学校は、どのような挑戦と変革を経験したのでしょうか？</p>
+        </div>
+        <div class="school-visual">
+            <div class="school-building"></div>
+            <div class="cherry-blossoms"></div>
+        </div>
+    </section>
+
+    <section class="timeline-container">
+        <h3>近代教育の時を旅する</h3>
+        <p class="timeline-intro">スクロールして日本の教育の歴史的な瞬間を発見しましょう</p>
+        
+        <div class="timeline" id="timeline">
+            <!-- タイムラインイベントはJavaScriptで挿入されます -->
+        </div>
+    </section>
+
+    <section class="quiz-section hidden" id="quiz-section">
+        <h3>明治の学校クイズ</h3>
+        <p>歴史的な知識をテストしてみましょう</p>
+        
+        <div class="quiz-container" id="quiz-container">
+            <div class="quiz-progress" id="quiz-progress">
+                <span class="current">1</span>/<span class="total">4</span>
+            </div>
+            <div class="quiz-question" id="quiz-question">
+                <!-- 質問がここに表示されます -->
+            </div>
+            <div class="quiz-options" id="quiz-options">
+                <!-- 回答選択肢がここに表示されます -->
+            </div>
+            <div class="quiz-feedback hidden" id="quiz-feedback">
+                <!-- フィードバックメッセージがここに表示されます -->
+            </div>
+            <button class="quiz-next-btn hidden" id="quiz-next-btn">次へ</button>
+            <div class="quiz-results hidden" id="quiz-results">
+                <!-- 結果がここに表示されます -->
+            </div>
+        </div>
+    </section>
+
+    <section class="then-now">
+        <h3>明治の教室から現代へ</h3>
+        <div class="comparison">
+            <div class="then">
+                <h4>明治初期の教室 (1870年代)</h4>
+                <div class="then-image"></div>
+                <ul>
+                    <li><span class="icon">📚</span> 教科書は『小学読本』『啓蒙天地文』など限られた数</li>
+                    <li><span class="icon">👨‍🎓</span> 男女別学が基本</li>
+                    <li><span class="icon">🪑</span> 正座での授業、机と椅子は徐々に導入</li>
+                    <li><span class="icon">📝</span> 毛筆での習字、石盤を使用</li>
+                    <li><span class="icon">👨‍🏫</span> 教師は「先生」ではなく「訓導（くんどう）」と呼ばれた</li>
+                </ul>
+            </div>
+            <div class="now">
+                <h4>現代の教室 (2020年代)</h4>
+                <div class="now-image"></div>
+                <ul>
+                    <li><span class="icon">💻</span> デジタル教材とタブレット学習</li>
+                    <li><span class="icon">👨‍👩‍👧‍👦</span> 男女共学が一般的</li>
+                    <li><span class="icon">🪑</span> 可動式の机と椅子、多様な学習空間</li>
+                    <li><span class="icon">🖋️</span> ボールペンやタブレットでの記録</li>
+                    <li><span class="icon">🌏</span> プログラミングやグローバル教育の導入</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="pioneers">
+        <h3>近代教育の先駆者たち</h3>
+        
+        <div class="pioneer-card">
+            <div class="pioneer-image mori"></div>
+            <div class="pioneer-info">
+                <h4>森 有礼（1847-1889）</h4>
+                <p class="pioneer-title">初代文部大臣</p>
+                <p>「学問のために学ぶのではなく、国家のために学ぶのだ」という思想を掲げ、近代日本の教育制度構築に尽力。東京師範学校の設立にも関わり、国家の発展を担う人材育成に情熱を注いだ。教育勅語の草案にも関与したが、その国家主義的な教育観ゆえに1889年に暗殺された。</p>
+            </div>
+        </div>
+        
+        <div class="pioneer-card">
+            <div class="pioneer-image matsumoto"></div>
+            <div class="pioneer-info">
+                <h4>松本 順（1832-1907）</h4>
+                <p class="pioneer-title">医師・教育家</p>
+                <p>オランダ留学で西洋医学を学び、帰国後は軍医総監として活躍。同時に教育にも力を入れ、特に女子教育の重要性を説いた。「学校に机や椅子を導入すべき」と主張し、西洋式の学校環境整備に貢献。健康と教育の関連性を重視した先見の明を持つ改革者だった。</p>
+            </div>
+        </div>
+        
+        <div class="pioneer-card">
+            <div class="pioneer-image nakamura"></div>
+            <div class="pioneer-info">
+                <h4>中村 正直（1832-1891）</h4>
+                <p class="pioneer-title">啓蒙思想家・教育者</p>
+                <p>サミュエル・スマイルズの『自助論』を『西国立志編』として翻訳し、近代的な自立精神を日本に紹介。東京師範学校の教授を務め、「天は自ら助くる者を助く」という自助の精神と西洋の道徳観を調和させた教育を提唱した。女子教育にも熱心で、東京女子師範学校（現・お茶の水女子大学）創設にも貢献。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <h3>153年後の今日まで続く影響</h3>
+        
+        <div class="impact-grid">
+            <div class="impact-item">
+                <div class="impact-icon">🏫</div>
+                <h4>教育の実験場</h4>
+                <p>筑波大学附属小学校は現在も日本の教育研究の最前線。多くの教育実践や教科書の原型がここから生まれました。</p>
+            </div>
+            
+            <div class="impact-item">
+                <div class="impact-icon">📊</div>
+                <h4>識字率の飛躍</h4>
+                <p>明治初期の約30%から、現在は99%を超える識字率へ。学制の導入は日本の急速な近代化の基盤となりました。</p>
+            </div>
+            
+            <div class="impact-item">
+                <div class="impact-icon">🔄</div>
+                <h4>教育内容の変遷</h4>
+                <p>修身・読書・算術・習字から、プログラミングやSDGs教育まで。社会の変化に合わせて進化し続ける日本の教育。</p>
+            </div>
+            
+            <div class="impact-item">
+                <div class="impact-icon">🌏</div>
+                <h4>国際的な評価</h4>
+                <p>PISA（学習到達度調査）で常に上位の成績を収める日本の教育。その基礎は明治初期に築かれました。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-facts">
+        <h3>知られざる明治の学校事情</h3>
+        
+        <div class="fact-container">
+            <div class="fact">
+                <h4>就学率の苦戦</h4>
+                <p>義務教育が始まったものの、1873年の就学率はわずか28%。「学校に行かせるより、田畑で働かせた方が良い」と考える親も多く、出席率向上に行政は苦心しました。</p>
+            </div>
+            
+            <div class="fact">
+                <h4>授業料は有料だった</h4>
+                <p>義務教育でも授業料は必要で、月に12.5銭〜25銭（当時の労働者の1日分の賃金程度）。貧しい家庭の子どもは学校に通えないことも多く、完全無償化は1900年代まで待ちました。</p>
+            </div>
+            
+            <div class="fact">
+                <h4>教員不足の深刻さ</h4>
+                <p>開校当初は資格を持つ教員が極端に不足。武士、僧侶、神官など読み書きができる人々が急遽教壇に立ちました。「読み・書き・そろばん」を教えられる人なら誰でも先生になれた時代でした。</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="call-to-action">
+        <button id="show-quiz-btn">明治の学校クイズに挑戦する</button>
+    </div>
+
+    <footer>
+        <p>このコンテンツはAI（Claude）によって教育目的で生成されました。すべての情報は参考目的のみです。</p>
+        <p>データと情報は歴史的記録に基づいていますが、正確性を保証するものではありません。</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
